@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1">
+    <title>KCL iGEM</title>
+
+
+    <style>
+
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        body{
+        margin: 0;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        /*typography------------------------------*/
+        .title {
+            font-weight: 900;
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin-bottom: 1em;
+            padding-bottom: 2em;
+            text-emphasis: bold;
+
+        }
+        h1 {
+            font-weight: 300;
+            font-size: 2.5em;
+            text-transform: capitalize;
+            margin-top: 1em;
+        }
+        .title span {
+            margin-top: 1em;
+            font-weight: 200;
+            display: block;
+            font-size: .9em;
+        }
+
+
+        /*Buttons -------------------------------*/
+        .button {
+            display: inline-block;
+            font-size: 1.25rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-width: 2px;
+            border-style: solid;
+            padding: .5em 1.75em;
+        }
+
+        .button-small {
+            font-size: .9rem;
+            font-weight: 700;
+        }
+
+        .button-accent {
+            color: #00ff6c;
+            border-color: #00ff6c;
+        }
+
+        .button-accent:hover {
+        background: #00ff6c;
+        color: #232323;
+        }
+
+
+        /*header------------------------------*/
+
+        header {
+            background-color: rgba(0,0,0,.75);
+            position: absolute;
+            left: 0;
+            right: 0;
+            max-height: 7em;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            float: right;
+            margin-right: 5em;
+            margin-top: 2em;
+            position: relative;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 1em;
+            position: relative;
+        }
+
+        .nav-buttons {
+            font-weight: 900;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            padding: .5em;
+            color: #FFF;
+            position: relative;
+            padding-bottom: 3em;
+        }
+
+        .nav-buttons:hover {color: #00ff6c;}
+        .dropdown-nav-buttons:hover {color: #00ff6c;}
+
+        .dropdown-nav-buttons {
+            font-weight: 900;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            padding: .5em;
+            color: #FFF;
+            display: none;
+            background-color:  rgba(0,0,0,.75);
+            z-index: 1;
+            width: 10em;
+            margin-left: -3em;
+        }
+        #navadjust {
+          margin-left:-0.3em;;
+        }
+        .dropdownone {
+          margin-top: 2.58em;
+        }
+        .dropdowntwo {
+            margin-top: 4.75em;
+        }
+        .dropdownthree {
+          margin-top: 6.93em;
+        }
+
+        .nav-buttons:hover .dropdown-nav-buttons{
+            display: block;
+            position: absolute;
+        }
+        .logo {
+            height: 90px;
+            width: 90px;
+            float: left;
+            margin-left: 6em;
+            margin-top: .5em;
+        }
+
+           /*home hero------------------------------*/
+
+        .home-hero {
+            background-image: url(img/teampic.PNG);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 10em 0;
+            color: #FFF;
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+   /*home-about------------------------------*/
+        .home-about-textbox {
+            background-color: #232323;
+            padding: 15em;
+            width: 98.9vw;
+            margin-left: -2.5vw;
+            outline: 2px solid #00ff6c;
+            outline-offset: -5em;
+            color: #FFF;
+        }
+
+        .home-about-textbox h1 {
+            color: #00ff6c;
+            position: relative;
+            margin-top: -4.5em;
+            margin-bottom: 3em;
+            background: #232323;
+            margin-left: auto;
+            margin-right: auto;
+            width: 35vw;
+            text-align: center;
+        }
+        .home-about-textbox a {
+            margin-top: 2em;
+            margin-bottom: 0;
+            width: 60%;
+        }
+
+
+
+       /*portfolio------------------------------*/
+
+        .portfolio h1 {
+            width: 12em;
+            margin: auto;
+            margin-top: -1.5em;
+            padding-bottom: .7em;
+            padding-top: 1em;
+            color: #00ff6c;
+        }
+        .line {
+                width: 30%;
+                height: 1px;
+                margin: auto;
+            background: #00ff6c;
+        }
+        .spacer {
+            width: 100%;
+            height: 2em;
+        }
+        .portfolio {
+            margin: 3em 0;
+            background-color: #232323;
+
+        }
+
+        .port-item {
+            position: relative;
+            margin: 0;
+            width: 50%;
+            float: left;
+        }
+        .port-item img {
+            display: block;
+            width: 100%;
+            height: 17em;
+            object-fit: cover;
+
+        }
+        .port-desc {
+            position: absolute;
+            z-index: 100;
+            bottom: 3em;
+            left: 3em;
+            right: 3em;
+            color: white;
+            background: rgba(0,0,0,.75);
+            padding-bottom: 1em;        }
+        .port-desc p {
+            margin: 1em;
+            font-size: 1.2em;
+
+        }
+        #projectdescshort {
+          font-size: 1.5em;
+        }
+
+
+
+    </style>
+
+
+    </head>
+
+
+    <body>
+
+    <header>
+        <img src="img/logo.PNG" alt="logo" class="logo">
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-buttons">Home</a></li>
+                <li class="nav-buttons">Team
+                   <a href="teammembers.html" class="dropdown-nav-buttons dropdownone">Team Members</a>
+                    <a href="#" class="dropdown-nav-buttons dropdowntwo">Collaborations</a>
+                </li>
+                <li class="nav-buttons">Project
+                  <a href="#" class="dropdown-nav-buttons dropdownone">Description</a>
+                  <a href="#" class="dropdown-nav-buttons dropdowntwo">Design</a>
+                  <a href="#" class="dropdown-nav-buttons dropdownthree">Results</a>
+                </li>
+                <li class="nav-buttons">Parts
+                  <a href="#" class="dropdown-nav-buttons dropdownone">Parts Overview</a>
+                  <a href="#" class="dropdown-nav-buttons dropdowntwo">Basic Parts</a>
+                  <a href="#" class="dropdown-nav-buttons dropdownthree">Composite Parts</a>
+                </li>
+                <a href="#" class="nav-buttons">Safety</a>
+                <li class="nav-buttons">Human Practices
+                  <a href="#" class="dropdown-nav-buttons dropdownone" id="navadjust">Overview</a>
+                  <a href="#" class="dropdown-nav-buttons dropdowntwo" id="navadjust">Education and Engagement</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="home-hero">
+        <div class="container">
+        <h1 class="title">3' Suspects
+            <span>Investigating Untranslated regions on 3' end</span>
+        </h1>
+        <a href="#" class="button button-accent">See Our Work</a>
+        </div>
+    </section>
+
+    <div class="container">
+    <section class="home-about">
+        <div class="home-about-textbox">
+            <h1>what are we doing?</h1>
+            <p id="projectdescshort">We will use E.coli K12 to test our "Proof of Concept" Principle by engineering 3'UTR sequences (Sharma et al, 2011) to interact with either cytosolic proteins or 5'UTR sequences of our gene of interest: trxA and gor. Down regulation of these genes will be quantified by assessing quantitatively GFP signal. Efficiency of down regulation of genes will be quantified by assessing reaction kinetics of Alkaline Phosphatase (AP).</p>
+            <a href="#" class= "button button-accent">Full Project Description</a>
+        </div>
+    </section>
+        </div>
+
+    <section class="portfolio">
+        <h1>Some of Our Work</h1>
+        <div class="line"></div>
+        <div class="spacer"></div>
+        <!-- portfolio item 1 -->
+        <figure class="port-item">
+            <img src="img/symposium.PNG" alt="portfolio item">
+            <figcaption class="port-desc">
+                <p>iGEM Symposium</p>
+                <a href="" class="button button-accent button-small">See More</a>
+            </figcaption>
+        </figure>
+
+        <!-- portfolio item 2 -->
+        <figure class="port-item">
+            <img src="img/school.PNG" alt="portfolio item">
+            <figcaption class="port-desc">
+                <p>Bexley School Visit</p>
+                <a href="" class="button button-accent button-small">See More</a>
+            </figcaption>
+        </figure>
+
+        <!-- portfolio item 3 -->
+        <figure class="port-item">
+            <img src="img/instagram.PNG" alt="portfolio item">
+            <figcaption class="port-desc">
+                <p>Social Media</p>
+                <a href="" class="button button-accent button-small">See More</a>
+            </figcaption>
+        </figure>
+
+        <!-- portfolio item 4 -->
+        <figure class="port-item">
+            <img src="img/lab.PNG" alt="portfolio item">
+            <figcaption class="port-desc">
+                <p>Lab Work</p>
+                <a href="" class="button button-accent button-small">See More</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <footer>
+
+    </footer>
+
+
+
+
+
+    </body>
+
+
+</html>

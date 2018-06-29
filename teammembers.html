@@ -1,0 +1,494 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1">
+    <title>KCL iGEM</title>
+
+
+    <style>
+
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        body{
+        margin: 0;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        /*typography------------------------------*/
+        .title {
+            font-weight: 900;
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin-bottom: 1em;
+            padding-bottom: 2em;
+            text-emphasis: bold;
+
+        }
+        h1 {
+            font-weight: 300;
+            font-size: 2.5em;
+            text-transform: capitalize;
+            margin-top: 0em;
+        }
+
+        .title span {
+            margin-top: 1em;
+            font-weight: 200;
+            display: block;
+            font-size: .9em;
+        }
+
+
+        /*Buttons -------------------------------*/
+        .button {
+            display: inline-block;
+            font-size: 1.25rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-width: 2px;
+            border-style: solid;
+            padding: .5em 1.75em;
+        }
+
+        .button-small {
+            font-size: .9rem;
+            font-weight: 700;
+        }
+
+        .button-accent {
+            color: #00ff6c;
+            border-color: #00ff6c;
+        }
+
+        .button-accent:hover {
+        background: #00ff6c;
+        color: #232323;
+        }
+
+
+        /*header------------------------------*/
+
+        header {
+            background-color: #232323;
+            position: absolute;
+            left: 0;
+            right: 0;
+            max-height: 7em;
+            margin-top: 0;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            float: right;
+            margin-right: 5em;
+            margin-top: 2em;
+            position: relative;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 1em;
+            position: relative;
+        }
+
+        .nav-buttons {
+            font-weight: 900;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            padding: .5em;
+            color: #FFF;
+            position: relative;
+            padding-bottom: 3em;
+        }
+
+        .nav-buttons:hover {color: #00ff6c;}
+        .dropdown-nav-buttons:hover {color: #00ff6c;}
+
+        .dropdown-nav-buttons {
+            font-weight: 900;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            padding: .5em;
+            color: #FFF;
+            display: none;
+            background-color:  rgba(0,0,0,.75);
+            z-index: 1;
+            width: 10em;
+            margin-left: -3em;
+        }
+        #navadjust {
+          margin-left:-0.3em;;
+        }
+        .dropdownone {
+          margin-top: 2.58em;
+        }
+        .dropdowntwo {
+            margin-top: 4.75em;
+        }
+        .dropdownthree {
+          margin-top: 6.93em;
+        }
+
+        .nav-buttons:hover .dropdown-nav-buttons{
+            display: block;
+            position: absolute;
+        }
+        .logo {
+            height: 90px;
+            width: 90px;
+            float: left;
+            margin-left: 6em;
+            margin-top: .5em;
+        }
+
+
+
+        /*portfolio------------------------------*/
+
+         .team h1 {
+             width: 12em;
+             margin: auto;
+             margin-top: 0em;
+             padding-bottom: .7em;
+             padding-top: 1em;
+             color: #fff;
+         }
+         .line {
+                 width: 30%;
+                 height: 1px;
+                 margin: auto;
+             background: #00ff6c;
+         }
+         .spacer {
+             width: 100%;
+             height: 2em;
+         }
+
+         .portrait{
+             position: relative;
+             height: 22em;
+             margin-top: 0;
+             background-color: black;
+         }
+         .oddportrait {
+           float: left;
+           margin-left: -.5em;
+           margin-right: -1em;
+           width: 19em;
+         }
+         .evenportrait {
+           float: right;
+           margin-right: -10em;
+           width: 19em;
+
+
+         }
+         .portrait img {
+             display: block;
+             width: 30em;
+             height: 22em;
+             object-fit: cover;
+             position: relative;
+             z-index: 50;
+         }
+         .portdesc {
+           background-color: black;
+           color: #FFF;
+           display: block;
+           width: 90%;
+           padding:0em 2em;
+           padding-bottom: 0em;
+           height: 13em;
+           margin-top: 0em;
+
+
+         }
+         .oddportdesc {
+             margin-right: 1.35em;
+           float: right;
+
+         }
+         .evenportdesc {
+           float: left;
+           margin-left: 1.4em;
+         }
+         .desccontainer {
+           height: 22em;
+           margin-top: -3em;
+           width: 60%;
+           margin-left: 0;
+           position: relative;
+           display: block;
+           float: right;
+           background-color: black;
+           outline: 2px solid #00ff6c;
+           outline-offset: -2em;
+           padding: 0;
+           z-index: 5;
+         }
+         .desccontainerodd {
+           float: right;
+           margin-top: 0em;
+           background-color: black;
+         }
+         .desccontainereven {
+           float:left;
+           margin-top: 0em;
+           margin-left: 0;
+         }
+         .desccontainer h1 {
+           color: #00ff6c;
+           position: relative;
+           background: #000000;
+           margin-left: auto;
+           margin-right: auto;
+           width: 10em;;
+           text-align: center;
+           font-size: 1.3em;
+         }
+         .team {
+           background-color: #232323;
+           width: 100%;
+           margin-left: 0;
+           padding-left: 0;
+           height: 100em;
+
+         }
+         .spacerheader {
+           height: 7em;
+           color: #FFF;
+         }
+         .person {
+           display: block;
+           height: 22em;
+           background-color: blue;
+           width: 50%;
+         }
+         .personeven {
+                      margin-top: -22em;
+                      float: right;
+         }
+         .portraitcontainer {
+           float:right;
+           background-color: black;
+           position: absolute;
+           height: 22em;
+           margin-left: 23.7em;
+         }
+         .personrow2 {
+           margin-top: 0em;
+         }
+         .personrow3 {
+           margin-top: 0em;
+         }
+         #kat {
+           float: left;
+           margin-left: -17.5em;
+         }
+         #maya {
+           float:left;
+         }
+         #joao {
+           margin-left: 45.2em;
+         }
+         #joaopic {
+           margin-left: -23.2em;
+         }
+         #mayapic {
+           margin-left: -26.2em;
+         }
+         #ajay {
+           float: left;
+         }
+         #anthony {
+           margin-top: 22em;
+           margin-left: 45.2em;
+           position: relative;
+           display: block;
+         }
+         #anthonypic {
+           margin-left: -23.2em;
+         }
+
+
+
+    </style>
+
+
+    </head>
+
+
+    <body>
+
+    <header>
+        <img src="img/logo.PNG" alt="logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-buttons">Home</a></li>
+                <li class="nav-buttons">Team
+                   <a href="teammembers.html" class="dropdown-nav-buttons dropdownone">Team Members</a>
+                    <a href="#" class="dropdown-nav-buttons dropdowntwo">Collaborations</a>
+                </li>
+                <li class="nav-buttons">Project
+                  <a href="#" class="dropdown-nav-buttons dropdownone">Description</a>
+                  <a href="#" class="dropdown-nav-buttons dropdowntwo">Design</a>
+                  <a href="#" class="dropdown-nav-buttons dropdownthree">Results</a>
+                </li>
+                <li class="nav-buttons">Parts
+                  <a href="#" class="dropdown-nav-buttons dropdownone">Parts Overview</a>
+                  <a href="#" class="dropdown-nav-buttons dropdowntwo">Basic Parts</a>
+                  <a href="#" class="dropdown-nav-buttons dropdownthree">Composite Parts</a>
+                </li>
+                <a href="#" class="nav-buttons">Safety</a>
+                <li class="nav-buttons">Human Practices
+                  <a href="#" class="dropdown-nav-buttons dropdownone" id="navadjust">Overview</a>
+                  <a href="#" class="dropdown-nav-buttons dropdowntwo" id="navadjust">Education and Engagement</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="spacerheader"></div>
+
+
+    <section class="team">
+      <h1>Meet the Team</h1>
+      <div class="line"></div>
+      <div class="spacer"></div>
+
+      <div class="person" id="marcos">
+      <figure class="portrait oddportrait">
+          <img src="img/marcos.png" class="portraitpic">
+      </figure>
+      <div class="desccontainer desccontainerodd">
+        <h1 class="">Marcos Vega-Hazas</h1>
+        <figure class="portdesc oddportdesc">
+          <p>Hi, I’m a final year Biochemistry student from Madrid, Spain. Yes, I reaaaally like the sun. And jamón and tortilla de patata.
+With the philosophy of “Think Global, Act Local”, I see iGEM as an opportunity to add value to the community around us. My hope is that both our university and other iGEM teams help us establish a platform where students can express their motivation, talent and curiosity for science. </p></div>
+    </div>
+
+    <div class="person personeven" id="maria">
+    <div class="desccontainer desccontainereven">
+      <h1 class="">Maria Jose Ramos</h1>
+      <figure class="portdesc evenportdesc">
+        <p>Hi my name is Maria Jose and I am studying Molecular Genetics. I believe in the promise that synthetic biology will allow us to go beyond our limits with responsibility… and I believe that hundreds of contributions each year from iGEMers are the driving force behind it.
+As a student interested in the field of Genetics I am honoured to be part of this and make a contribution that helps to push this step further.</p></div>
+  <div class="portraitcontainer">
+  <figure class="portrait evenportrait">
+      <img src="img/Maria.png" class="portraitpic">
+  </figure>
+</div>
+  </div>
+
+  <div class="person personeven personrow2" id="kat">
+  <div class="desccontainer desccontainereven">
+    <h1 class="">Katarzyna Pleśniar</h1>
+    <figure class="portdesc evenportdesc">
+      <p>Hi, I’m a first year Neuroscience student from Poland. I’m very interested in developmental neurobiology and I’m so excited what the field of synthetic biology holds for neuroscience.
+Being part of KCL iGEM allows me to work with incredible people. My goal is to help change the perception of synthetic biology outside the scientific community with the hopes to raise awareness of its beneficial potential and ability to transform the world around us.</p></div>
+<div class="portraitcontainer">
+<figure class="portrait evenportrait">
+    <img src="img/kat.png" class="portraitpic">
+</figure>
+</div>
+</div>
+
+<div class="person personodd personrow2" id="joao">
+<div class="desccontainer desccontainerodd">
+  <h1 class="">João Gonçalves</h1>
+  <figure class="portdesc oddportdesc">
+    <p>My name is João, I am 20 years old and I’m from Lisbon, Portugal. I love travelling, sports and science. I like to use my free time to learn new things: I did the Open Water Diving course and a course about the Theory of Relativity.</p></div>
+<div class="portraitcontainer">
+<figure class="portrait oddportrait">
+  <img src="img/joao.png" class="portraitpic" id="joaopic">
+</figure>
+</div>
+</div>
+
+
+
+<div class="person personodd personrow3" id="maya">
+<div class="desccontainer desccontainerodd">
+  <h1 class="">Maya Biswas-Whittaker</h1>
+  <figure class="portdesc oddportdesc">
+    <p>I’ve just finished 1st year Neuroscience. I do a lot of volunteering work in my spare time: I’ve raised money for the Albert Kennedy trust, and I’m a full time volunteer for Just Like Us.
+My goal for iGEM is helping to create a safe and diverse work environment. Also, I think it's super important for us to try and increase diversity in STEM through teaching and working with different communities!</p></div>
+<div class="portraitcontainer">
+<figure class="portrait evenportrait">
+  <img src="img/maya.png" class="portraitpic" id="mayapic">
+</figure>
+</div>
+</div>
+
+<div class="person personeven personrow3" id="deeksha">
+<div class="desccontainer desccontainereven">
+  <h1 class="">Maya Biswas-Whittaker</h1>
+  <figure class="portdesc evenportdesc">
+    <p>Hi I’m Deeksha! I’m a first year student from Salisbury (a quaint city boasting Stonehenge, the Magna Carta and Russian spy poisoning) and I'm studying Biochemistry.
+When not procrastinating work, I enjoy yoga and playing a round of golf with my Dad.</p></div>
+<div class="portraitcontainer">
+<figure class="portrait evenportrait">
+  <img src="img/deeksha.png" class="portraitpic" id="deekshapic">
+</figure>
+</div>
+</div>
+
+<div class="person personeven personrow3" id="ajay">
+<div class="desccontainer desccontainereven">
+  <h1 class="">Ajay Dulai</h1>
+  <figure class="portdesc evenportdesc">
+    <p>I’m Ajay- a first year medical student! I love working on robotics and computers, and I’m very excited to participate in this year’s iGEM competition. I have a collection of 15 Rubik’s cubes and the fastest I've ever completed one is 18 seconds!</p></div>
+<div class="portraitcontainer">
+<figure class="portrait evenportrait">
+  <img src="img/ajay.png" class="portraitpic" id="ajaypic">
+</figure>
+</div>
+</div>
+
+<div class="person personodd personrow3" id="anthony">
+<div class="desccontainer desccontainerodd">
+  <h1 class="">Anthony Chau</h1>
+  <figure class="portdesc evenportdesc">
+    <p>I am a 2nd year Biochemistry Student from Wakefield, West Yorkshire with particular interests in immunology and cancer biology. I look forward to our research in the lab where we will work towards a project which can be beneficial to society.
+I am an avid cyclist, often seen doing circuits in Richmond Park and I am a keen musician, playing guitar and bass from an early age.</p></div>
+<div class="portraitcontainer">
+<figure class="portrait oddportrait">
+  <img src="img/anthony.png" class="portraitpic" id="anthonypic">
+</figure>
+</div>
+</div>
+
+
+
+
+    </section>
+
+
+
+
+
+    </body>
+
+
+</html>
