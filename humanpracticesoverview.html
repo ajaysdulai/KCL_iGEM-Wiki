@@ -170,7 +170,7 @@
         /*top------------------------------*/
         .top {
           background-color: #232323;
-          height: 17vh;
+          height: 19vh;
         }
         .line {
                 width: 30%;
@@ -181,8 +181,8 @@
 
         /*middle------------------------------*/
         .middle {
-          background-color: #232323;
-          height: 33vh;
+          background-color: black;
+          height: 31vh;
           font-size: 0;
         }
         .middle > div {font-size: 1rem;}
@@ -190,42 +190,112 @@
         .links {
           display: inline-block;
           width: 33.3333vw;
-          height: 28vh;
-          margin-top: 2vh;
+          height: 30vh;
           margin-left: 0;
         }
         #outreach {
-          background-color: blue;
+
         }
         #education {
-          background-color: pink;
         }
         #engagement {
-          background-color: purple;
         }
         .middledesc {
             color: white;
             background: rgba(0,0,0,.75);
-            padding-top: .8em;
-            padding-bottom: .8em;
-            padding-left: 3em;
-            padding-right: 3em;
-            margin-left: 8.7vw;
-            margin-top: -7em;
-            z-index: 5;
             position: absolute;
+            margin-top: -15vh;
+            margin-left: 13vw;
         }
          .middledesc p {
             font-size: 1.2em;
         }
 
+
+                .slider {
+        height: inherit;
+        width: inherit;
+          margin: auto;
+          position: relative;
+        }
+        .slide1,.slide2,.slide3,.slide4,.slide5 {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+        .slide1 {
+              background-size: cover;
+            animation:fade 8s infinite;
+        -webkit-animation:fade 8s infinite;
+
+        }
+        .slide2 {
+              background-size: cover;
+            animation:fade2 8s infinite;
+        -webkit-animation:fade2 8s infinite;
+        }
+        .slide3 {
+              background-size: cover;
+            animation:fade3 8s infinite;
+        -webkit-animation:fade3 8s infinite;
+        }
+        #leftfirst {
+          background-image: url(img/overviewleftfirst.JPG);
+        }
+        #leftsecond {
+          background-image: url(img/overviewleftsecond.JPG);
+        }
+        #leftthird {
+          background-image: url(img/overviewleftthird.JPG);
+        }
+        #middlefirst {
+          background-image: url(img/overviewmiddlefirst.JPG);
+        }
+        #middlesecond {
+          background-image: url(img/overviewmiddlesecond.JPG);
+        }
+        #middlethird {
+          background-image: url(img/overviewmiddlethird.JPG);
+        }
+        #rightfirst {
+          background-image: url(img/overviewrightfirst.JPG);
+        }
+        #rightsecond {
+          background-image: url(img/overviewrightsecond.JPG);
+        }
+        #rightthird {
+          background-image: url(img/overviewrightthird.JPG);
+        }
+
+        @keyframes fade
+        {
+          0%   {opacity:1}
+          33.333% { opacity: 0}
+          66.666% { opacity: 0}
+          100% { opacity: 1}
+        }
+        @keyframes fade2
+        {
+          0%   {opacity:0}
+          33.333% { opacity: 1}
+          66.666% { opacity: 0 }
+          100% { opacity: 0}
+        }
+        @keyframes fade3
+        {
+          0%   {opacity:0}
+          33.333% { opacity: 0}
+          66.666% { opacity: 1}
+          100% { opacity: 0}
+        }
+
         /*bottom------------------------------*/
         .bottom {
           height: 34vh;
-          background-color: blue;
+          background-color: black;
         }
         .overviewtextbox {
-          background-color: #232323;
+          background-color: black;
           height: 34vh;
           width: 100vw;
           margin: auto;
@@ -235,7 +305,7 @@
         }
         .overviewtextbox h1 {
           padding-top: .3em;
-          background-color: #232323;
+          background-color: black;
           width: 17vw;
           margin-left: 2em;
           z-index: 2;
@@ -245,59 +315,8 @@
           padding-left: 5em;
           padding-right: 5em;
           margin: auto;
+          text-align: middle;
         }
-
-        .slider {
-height: inherit;
-width: inherit;
-  margin: auto;
-  position: relative;
-}
-.slide1,.slide2,.slide3,.slide4,.slide5 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-.slide1 {
-  background: url(http://media.dunkedcdn.com/assets/prod/40946/580x0-9_cropped_1371566801_p17tbs0rrjqdt1u4dnk94fe4b63.jpg)no-repeat center;
-      background-size: cover;
-    animation:fade 8s infinite;
--webkit-animation:fade 8s infinite;
-
-}
-.slide2 {
-  background: url(http://media.dunkedcdn.com/assets/prod/40946/580x0-9_cropped_1371565525_p17tbqpu0d69c21hetd77dh483.jpeg)no-repeat center;
-      background-size: cover;
-    animation:fade2 8s infinite;
--webkit-animation:fade2 8s infinite;
-}
-.slide3 {
-    background: url(http://media.dunkedcdn.com/assets/prod/40946/580x0-9_cropped_1371564896_p17tbq6n86jdo3ishhta3fv1i3.jpg)no-repeat center;
-      background-size: cover;
-    animation:fade3 8s infinite;
--webkit-animation:fade3 8s infinite;
-}
-@keyframes fade
-{
-  0%   {opacity:1}
-  33.333% { opacity: 0}
-  66.666% { opacity: 0}
-  100% { opacity: 1}
-}
-@keyframes fade2
-{
-  0%   {opacity:0}
-  33.333% { opacity: 1}
-  66.666% { opacity: 0 }
-  100% { opacity: 0}
-}
-@keyframes fade3
-{
-  0%   {opacity:0}
-  33.333% { opacity: 0}
-  66.666% { opacity: 1}
-  100% { opacity: 0}
-}
 
     </style>
 
@@ -346,9 +365,9 @@ width: inherit;
     <section class="middle">
       <div class="links" id="outreach">
         <div class='slider'>
-          <div class='slide1'></div>
-          <div class='slide2'></div>
-          <div class='slide3'></div>
+          <div class='slide1' id="leftfirst"></div>
+          <div class='slide2'id="leftsecond"></div>
+          <div class='slide3' id="leftthird"></div>
         </div>
         <figcaption class="middledesc">
             <a href="" class="button button-accent button-small">Outreach</a>
@@ -357,9 +376,9 @@ width: inherit;
 
       <div class="links" id="education">
         <div class='slider'>
-          <div class='slide1'></div>
-          <div class='slide2'></div>
-          <div class='slide3'></div>
+          <div class='slide1' id="middlefirst"></div>
+          <div class='slide2' id="middlesecond"></div>
+          <div class='slide3' id="middlethird"></div>
         </div>
         <figcaption class="middledesc">
             <a href="" class="button button-accent button-small">Education</a>
@@ -368,9 +387,9 @@ width: inherit;
 
       <div class="links" id="engagement">
         <div class='slider'>
-          <div class='slide1'></div>
-          <div class='slide2'></div>
-          <div class='slide3'></div>
+          <div class='slide1' id="rightfirst"></div>
+          <div class='slide2' id="rightsecond"></div>
+          <div class='slide3' id="rightthird"></div>
         </div>
         <figcaption class="middledesc">
             <a href="" class="button button-accent button-small">Engagement</a>
