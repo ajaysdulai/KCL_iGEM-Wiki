@@ -44,8 +44,10 @@
         h1 {
             font-weight: 300;
             font-size: 2.5em;
+            padding-top: 0.5em;
+            margin-top: 0em;
+            color: red;
             text-transform: capitalize;
-            margin-top: 1em;
         }
         .title span {
             margin-top: 1em;
@@ -85,11 +87,12 @@
         /*header------------------------------*/
 
         header {
-            background-color: rgba(0,0,0,.75);
+            background-color: #232323;
             position: absolute;
             left: 0;
             right: 0;
-            max-height: 7em;
+            max-height: 16vh;
+            min-height: 7em;
         }
 
         nav ul {
@@ -159,116 +162,141 @@
             margin-left: 6em;
             margin-top: .5em;
         }
-
-           /*home hero------------------------------*/
-
-        .home-hero {
-            background-image: url(img/teampic.PNG);
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 10em 0;
-            color: #FFF;
-            height: 100vh;
-            background-attachment: fixed;
-            background-position: center;
+        .uselessspacer {
+          height: 16vh;
         }
 
-        #seeourwork {
-          margin-top: 2.5em;
-        }
-
-   /*home-about------------------------------*/
-        .home-about-textbox {
-            background-color: #232323;
-            padding: 15em;
-            width: 98.9vw;
-            margin-left: -2.5vw;
-            outline: 2px solid #FF0000;
-            outline-offset: -5em;
-            color: #FFF;
-        }
-
-        .home-about-textbox h1 {
-            color: #FF0000;
-            position: relative;
-            margin-top: -4.5em;
-            margin-bottom: 3em;
-            background: #232323;
-            margin-left: auto;
-            margin-right: auto;
-            width: 35vw;
-            text-align: center;
-        }
-        .home-about-textbox a {
-            margin-top: 2em;
-            margin-bottom: 0;
-            width: 60%;
-        }
-
-        #projectdescshort {
-          color: #FFF;
-        }
-
-
-
-       /*portfolio------------------------------*/
-
-        .portfolio h1 {
-            width: 12em;
-            margin: auto;
-            margin-top: -1.5em;
-            padding-bottom: .7em;
-            padding-top: 1em;
-            color: #FF0000;
+        /*top------------------------------*/
+        .top {
+          background-color: #232323;
+          height: 17vh;
         }
         .line {
                 width: 30%;
-                height: 1px;
+                height: 1.5px;
                 margin: auto;
-            background: #FF0000;
-        }
-        .spacer {
-            width: 100%;
-            height: 2em;
-        }
-        .portfolio {
-            margin: 3em 0;
-            background-color: #232323;
-
+            background: red;
         }
 
-        .port-item {
-            position: relative;
-            margin: 0;
-            width: 50%;
-            float: left;
+        /*middle------------------------------*/
+        .middle {
+          background-color: #232323;
+          height: 33vh;
+          font-size: 0;
         }
-        .port-item img {
-            display: block;
-            width: 100%;
-            height: 17em;
-            object-fit: cover;
+        .middle > div {font-size: 1rem;}
 
+        .links {
+          display: inline-block;
+          width: 33.3333vw;
+          height: 28vh;
+          margin-top: 2vh;
+          margin-left: 0;
         }
-        .port-desc {
-            position: absolute;
-            z-index: 100;
-            bottom: 3em;
-            left: 3em;
-            right: 3em;
+        #outreach {
+          background-color: blue;
+        }
+        #education {
+          background-color: pink;
+        }
+        #engagement {
+          background-color: purple;
+        }
+        .middledesc {
             color: white;
             background: rgba(0,0,0,.75);
-            padding-bottom: 1em;        }
-           .port-desc p {
-            margin: 1em;
+            padding-top: .8em;
+            padding-bottom: .8em;
+            padding-left: 3em;
+            padding-right: 3em;
+            margin-left: 8.7vw;
+            margin-top: -7em;
+            z-index: 5;
+            position: absolute;
+        }
+         .middledesc p {
             font-size: 1.2em;
-
-        }
-        #projectdescshort {
-          font-size: 1.5em;
         }
 
+        /*bottom------------------------------*/
+        .bottom {
+          height: 34vh;
+          background-color: blue;
+        }
+        .overviewtextbox {
+          background-color: #232323;
+          height: 34vh;
+          width: 100vw;
+          margin: auto;
+          outline: 2px solid #FF0000;
+          color: #FFF;
+          outline-offset: -2.5em;
+        }
+        .overviewtextbox h1 {
+          padding-top: .3em;
+          background-color: #232323;
+          width: 17vw;
+          margin-left: 2em;
+          z-index: 2;
+          position: sticky;
+        }
+        #overviewdesc {
+          padding-left: 5em;
+          padding-right: 5em;
+          margin: auto;
+        }
 
+        .slider {
+height: inherit;
+width: inherit;
+  margin: auto;
+  position: relative;
+}
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide1 {
+  background: url(http://media.dunkedcdn.com/assets/prod/40946/580x0-9_cropped_1371566801_p17tbs0rrjqdt1u4dnk94fe4b63.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade 8s infinite;
+-webkit-animation:fade 8s infinite;
+
+}
+.slide2 {
+  background: url(http://media.dunkedcdn.com/assets/prod/40946/580x0-9_cropped_1371565525_p17tbqpu0d69c21hetd77dh483.jpeg)no-repeat center;
+      background-size: cover;
+    animation:fade2 8s infinite;
+-webkit-animation:fade2 8s infinite;
+}
+.slide3 {
+    background: url(http://media.dunkedcdn.com/assets/prod/40946/580x0-9_cropped_1371564896_p17tbq6n86jdo3ishhta3fv1i3.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade3 8s infinite;
+-webkit-animation:fade3 8s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
 
     </style>
 
@@ -300,82 +328,61 @@
                 </li>
                 <a href="#" class="nav-buttons">Safety</a>
                 <li class="nav-buttons">Human Practices
-                  <a href="humanpracticesoverview.html" class="dropdown-nav-buttons dropdownone" id="navadjust">Overview</a>
+                  <a href="#" class="dropdown-nav-buttons dropdownone" id="navadjust">Overview</a>
                   <a href="#" class="dropdown-nav-buttons dropdowntwo" id="navadjust">Education and Engagement</a>
                 </li>
             </ul>
         </nav>
     </header>
+    <div class="uselessspacer"></div>
 
-    <section class="home-hero">
-        <div class="container">
-        <h1 class="title">3' Suspects
-            <span>Investigating Untranslated regions on 3' end</span>
-        </h1>
-        <a href="#" class="button button-accent" id="seeourwork">See Our Work</a>
-        </div>
+    <section class="top">
+      <h1>Human Practices</h1>
+      <div class="line"></div>
     </section>
 
-    <div class="container">
-    <section class="home-about">
-        <div class="home-about-textbox">
-            <h1>what are we doing?</h1>
-            <p id="projectdescshort">We are developing a new technology platform based on 3'UTR sequence characterisation to control soluble protein expression in E.coli. <br> <br>We will use E.coli K12 to test our "Proof of Concept" Principle by engineering 3'UTR sequences (Sharma et al, 2011) to interact with either cytosolic proteins or 5'UTR sequences of our gene of interest: trxA and gor. Down regulation of these genes will be quantified by assessing quantitatively GFP signal. Efficiency of down regulation of genes will be quantified by assessing reaction kinetics of Alkaline Phosphatase (AP).</p>
-            <a href="#" class= "button button-accent">Full Project Description</a>
+
+    <section class="middle">
+      <div class="links" id="outreach">
+        <div class='slider'>
+          <div class='slide1'></div>
+          <div class='slide2'></div>
+          <div class='slide3'></div>
         </div>
-    </section>
+        <figcaption class="middledesc">
+            <a href="" class="button button-accent button-small">Outreach</a>
+        </figcaption>
+      </div>
+
+      <div class="links" id="education">
+        <div class='slider'>
+          <div class='slide1'></div>
+          <div class='slide2'></div>
+          <div class='slide3'></div>
         </div>
+        <figcaption class="middledesc">
+            <a href="" class="button button-accent button-small">Education</a>
+        </figcaption>
+      </div>
 
-    <section class="portfolio">
-        <h1>Some of Our Work</h1>
-        <div class="line"></div>
-        <div class="spacer"></div>
-        <!-- portfolio item 1 -->
-        <figure class="port-item">
-            <img src="img/symposium.PNG" alt="portfolio item">
-            <figcaption class="port-desc">
-                <p>iGEM Symposium</p>
-                <a href="" class="button button-accent button-small">See More</a>
-            </figcaption>
-        </figure>
-
-        <!-- portfolio item 2 -->
-        <figure class="port-item">
-            <img src="img/school.PNG" alt="portfolio item">
-            <figcaption class="port-desc">
-                <p>Bexley School Visit</p>
-                <a href="" class="button button-accent button-small">See More</a>
-            </figcaption>
-        </figure>
-
-        <!-- portfolio item 3 -->
-        <figure class="port-item">
-            <img src="img/instagram.PNG" alt="portfolio item">
-            <figcaption class="port-desc">
-                <p>Social Media</p>
-                <a href="" class="button button-accent button-small">See More</a>
-            </figcaption>
-        </figure>
-
-        <!-- portfolio item 4 -->
-        <figure class="port-item">
-            <img src="img/lab.PNG" alt="portfolio item">
-            <figcaption class="port-desc">
-                <p>Lab Work</p>
-                <a href="" class="button button-accent button-small">See More</a>
-            </figcaption>
-        </figure>
+      <div class="links" id="engagement">
+        <div class='slider'>
+          <div class='slide1'></div>
+          <div class='slide2'></div>
+          <div class='slide3'></div>
+        </div>
+        <figcaption class="middledesc">
+            <a href="" class="button button-accent button-small">Engagement</a>
+        </figcaption>
+      </div>
     </section>
 
-    <footer>
-
-    </footer>
-
-
-
-
+    <section class="bottom">
+      <div class="overviewtextbox">
+        <div id="overviewblock"><h1>Overview</h1></div>
+        <p id="overviewdesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </section>
 
     </body>
-
-
 </html>
