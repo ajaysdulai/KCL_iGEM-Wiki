@@ -1,0 +1,391 @@
+<!doctype html>
+<html>
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="fullpage.css" />
+  	<script src="vendors/easings.min.js"></script>
+  	<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+  	<script type="text/javascript" src="fullpage.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1">
+    <title>KCL iGEM</title>
+
+
+    <style>
+
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        body{
+        margin: 0;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        /*typography------------------------------*/
+        .title {
+            font-weight: 900;
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin-bottom: 1em;
+            padding-bottom: 2em;
+            text-emphasis: bold;
+
+        }
+        h1 {
+            font-weight: 300;
+            font-size: 2.5em;
+            padding-top: 0.5em;
+            margin-top: 0em;
+            color: red;
+            text-transform: capitalize;
+        }
+        .title span {
+            margin-top: 1em;
+            font-weight: 200;
+            display: block;
+            font-size: .9em;
+        }
+
+
+        /*Buttons -------------------------------*/
+        .button {
+            display: inline-block;
+            font-size: 1.25rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-width: 2px;
+            border-style: solid;
+            padding: .5em 1.75em;
+        }
+
+        .button-small {
+            font-size: .9rem;
+            font-weight: 700;
+        }
+
+        .button-accent {
+            color: #FF0000;
+            border-color: #FF0000;
+        }
+
+        .button-accent:hover {
+        background: #FF0000;
+        color: #232323;
+        }
+
+
+        /*header------------------------------*/
+
+        header {
+            background-color: #232323;
+            position: fixed;
+            left: 0;
+            right: 0;
+            max-height: 16vh;
+            min-height: 16vh;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            float: right;
+            margin-right: 5em;
+            margin-top: 2em;
+            position: relative;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 1em;
+            position: relative;
+        }
+
+        .nav-buttons {
+            font-weight: 900;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            padding: .5em;
+            color: #FFF;
+            position: relative;
+            padding-bottom: 3em;
+        }
+
+        .nav-buttons:hover {color: #FF0000;}
+        .dropdown-nav-buttons:hover {color: #FF0000;}
+
+        .dropdown-nav-buttons {
+            font-weight: 900;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            padding: .5em;
+            color: #FFF;
+            display: none;
+            background-color:  rgba(0,0,0,.75);
+            z-index: 1;
+            width: 10em;
+            margin-left: -3em;
+        }
+        #navadjust {
+          margin-left:-0.3em;;
+        }
+        .dropdownone {
+          margin-top: 2.58em;
+        }
+        .dropdowntwo {
+            margin-top: 4.75em;
+        }
+        .dropdownthree {
+          margin-top: 6.93em;
+        }
+
+        .nav-buttons:hover .dropdown-nav-buttons{
+            display: block;
+            position: absolute;
+        }
+        .logo {
+            height: 90px;
+            width: 90px;
+            float: left;
+            margin-left: 6em;
+            margin-top: .5em;
+        }
+        .uselessspacer {
+          height: 16vh;
+          background-color: #232323;
+        }
+
+        /*top------------------------------*/
+        .top {
+          background-color: #232323;
+          height: 19vh;
+          position: absolute;
+          width: 100vw;
+        }
+        .top h1 {
+          width: 100vw;
+          text-align: center;
+        }
+        .line {
+                width: 30%;
+                height: 1.5px;
+                margin: auto;
+            background: red;
+        }
+        .topspacer{
+          height: 34.9999vh;
+        background-color: #232323;}
+
+        /*event--------------------------*/
+        .hero {
+          height: 65vh;
+          background-color: pink;
+          width: 100%;
+          position: absolute;
+        }
+        .event {
+          height: 100vh;
+          width: 100%;
+          background-color: #232323;
+          position: relative;
+
+        }
+        .hello {
+          font-size: 10em;
+          position: absolute;
+        }
+        .fullpage {
+          height: 65vh;
+          width: 100%;
+        }
+        #bexley {
+          margin-top: 65vh;
+        }
+        #bexley2{
+
+        }
+        #upcoming {
+          background-color: red;
+        }
+.contentfiller {
+  height: 65vh;
+  width: 100%;
+  background-color: pink;
+}
+.animfiller {
+  height: 53vh;
+}
+.anims {
+  margin-bottom: 3em;
+  position: relative;
+}
+
+
+
+    </style>
+
+    <script>
+  	 $(document).ready(function() {
+  	    $('#fullpage').fullpage({
+  			        css3: true
+                //scrollOverflow: true
+
+  	           });
+             });
+
+  </script>
+
+
+    </head>
+
+
+    <body>
+
+    <header>
+        <img src="img/newlogo.gif" alt="logo" class="logo">
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-buttons">Home</a></li>
+                <li class="nav-buttons">Team
+                   <a href="teammembers.html" class="dropdown-nav-buttons dropdownone">Team Members</a>
+                    <a href="#" class="dropdown-nav-buttons dropdowntwo">Collaborations</a>
+                </li>
+                <li class="nav-buttons">Project
+                  <a href="#" class="dropdown-nav-buttons dropdownone">Description</a>
+                  <a href="#" class="dropdown-nav-buttons dropdowntwo">Design</a>
+                  <a href="#" class="dropdown-nav-buttons dropdownthree">Results</a>
+                </li>
+                <li class="nav-buttons">Parts
+                  <a href="#" class="dropdown-nav-buttons dropdownone">Parts Overview</a>
+                  <a href="#" class="dropdown-nav-buttons dropdowntwo">Basic Parts</a>
+                  <a href="#" class="dropdown-nav-buttons dropdownthree">Composite Parts</a>
+                </li>
+                <a href="#" class="nav-buttons">Safety</a>
+                <li class="nav-buttons">Human Practices
+                  <a href="#" class="dropdown-nav-buttons dropdownone" id="navadjust">Overview</a>
+                  <a href="#" class="dropdown-nav-buttons dropdowntwo" id="navadjust">Education and Engagement</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="uselessspacer"></div>
+
+        <section class="top">
+          <h1>Education</h1>
+          <div class="line"></div>
+        </section>
+    </header>
+    <div class="topspacer"></div>
+    <div class="hero">
+      <div class="hello">hello</div>
+      <div>
+    <div class="fullpage" id="fullpage">
+
+
+
+      <div class="section event" id="bexley">
+
+        <div class="animfiller"></div>
+        <header class="anims">
+            <img src="img/newlogo.gif" alt="logo" class="logo">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-buttons">Home</a></li>
+                    <li class="nav-buttons">Team
+                       <a href="teammembers.html" class="dropdown-nav-buttons dropdownone">Team Members</a>
+                        <a href="#" class="dropdown-nav-buttons dropdowntwo">Collaborations</a>
+                    </li>
+                    <li class="nav-buttons">Project
+                      <a href="#" class="dropdown-nav-buttons dropdownone">Description</a>
+                      <a href="#" class="dropdown-nav-buttons dropdowntwo">Design</a>
+                      <a href="#" class="dropdown-nav-buttons dropdownthree">Results</a>
+                    </li>
+                    <li class="nav-buttons">Parts
+                      <a href="#" class="dropdown-nav-buttons dropdownone">Parts Overview</a>
+                      <a href="#" class="dropdown-nav-buttons dropdowntwo">Basic Parts</a>
+                      <a href="#" class="dropdown-nav-buttons dropdownthree">Composite Parts</a>
+                    </li>
+                    <a href="#" class="nav-buttons">Safety</a>
+                    <li class="nav-buttons">Human Practices
+                      <a href="#" class="dropdown-nav-buttons dropdownone" id="navadjust">Overview</a>
+                      <a href="#" class="dropdown-nav-buttons dropdowntwo" id="navadjust">Education and Engagement</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="uselessspacer"></div>
+
+            <section class="top">
+              <h1>Bexley School Visit</h1>
+              <div class="line"></div>
+            </section>
+        </header>
+            </div>
+
+      <div class="contentfiller"> <div class="hello">hello 2</div></div>
+
+      <div class="section event" id="bexley2">
+
+        <div class="animfiller"></div>
+        <header class="anims">
+            <img src="img/newlogo.gif" alt="logo" class="logo">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-buttons">Home</a></li>
+                    <li class="nav-buttons">Team
+                       <a href="teammembers.html" class="dropdown-nav-buttons dropdownone">Team Members</a>
+                        <a href="#" class="dropdown-nav-buttons dropdowntwo">Collaborations</a>
+                    </li>
+                    <li class="nav-buttons">Project
+                      <a href="#" class="dropdown-nav-buttons dropdownone">Description</a>
+                      <a href="#" class="dropdown-nav-buttons dropdowntwo">Design</a>
+                      <a href="#" class="dropdown-nav-buttons dropdownthree">Results</a>
+                    </li>
+                    <li class="nav-buttons">Parts
+                      <a href="#" class="dropdown-nav-buttons dropdownone">Parts Overview</a>
+                      <a href="#" class="dropdown-nav-buttons dropdowntwo">Basic Parts</a>
+                      <a href="#" class="dropdown-nav-buttons dropdownthree">Composite Parts</a>
+                    </li>
+                    <a href="#" class="nav-buttons">Safety</a>
+                    <li class="nav-buttons">Human Practices
+                      <a href="#" class="dropdown-nav-buttons dropdownone" id="navadjust">Overview</a>
+                      <a href="#" class="dropdown-nav-buttons dropdowntwo" id="navadjust">Education and Engagement</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="uselessspacer"></div>
+
+            <section class="top">
+              <h1>Upcoming Event</h1>
+              <div class="line"></div>
+            </section>
+        </header>
+      </div>
+
+      <div class="contentfiller"><div class="hello">hello 3</div></div>
+
+      <div class="section event" id="upcoming">
+      </div>
+    </div>
+
+
+    </body>
+</html>

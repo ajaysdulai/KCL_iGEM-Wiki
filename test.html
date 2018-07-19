@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="fullpage.css" />
+	<script src="vendors/easings.min.js"></script>
+	<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+	<script type="text/javascript" src="fullpage.js"></script>
+
+
+	<script>
+	$(document).ready(function() {
+	$('#fullpage').fullpage({
+			sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
+			css3: true
+	});
+});
+</script>
+
+<style>
+.section {
+	font-size: 6em;
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+	<div id="fullpage">
+		<div class="section">Section 1</div>
+		<div class="section">Section 2</div>
+		<div class="section">Section 3</div>
+		<div class="section">Section 4</div>
+	</div>
+</body>
+
+</html>
