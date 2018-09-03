@@ -196,9 +196,9 @@
         /*event--------------------------*/
         .hero {
           height: 65vh;
-          background-color: pink;
-          width: 100%;
+          width: 100vw;
           position: absolute;
+          background-color: grey;
         }
         .event {
           height: 100vh;
@@ -227,7 +227,7 @@
 .contentfiller {
   height: 65vh;
   width: 100%;
-  background-color: pink;
+  background-color: black;
 }
 .animfiller {
   height: 53vh;
@@ -235,6 +235,33 @@
 .anims {
   margin-bottom: 3em;
   position: relative;
+}
+.herotextbox {
+  display: inline-block;
+  width: 40vw;
+  background-color: black;
+  height: inherit;
+  outline: 2px solid #FF0000;
+  outline-offset: -2em;
+  color: #FFF;
+}
+.herogallery {
+  display: inline-block;
+  width: 60vw;
+  background-color: blue;
+  height: inherit;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.desctextbox {
+  margin-top: 4em;
+  width: 85%;
+  margin-left: 2.5em;
+  font-size:1.1em;
 }
 
 
@@ -250,6 +277,20 @@
   	           });
              });
 
+             var slideIndex = 0;
+     carousel();
+
+     function carousel() {
+         var i;
+         var x = document.getElementsByClassName("mySlides");
+         for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+         }
+         slideIndex++;
+         if (slideIndex > x.length) {slideIndex = 1}
+         x[slideIndex-1].style.display = "block";
+         setTimeout(carousel, 2000); // Change image every 2 seconds
+     }
   </script>
 
 
@@ -294,8 +335,18 @@
     </header>
     <div class="topspacer"></div>
     <div class="hero">
-      <div class="hello">hello</div>
-      <div>
+      <div class="herotextbox left">
+      </div>
+      <div class="herogallery right">
+        <img class="mySlides" src="img/overviewmiddlefirst.jpg">
+        <img class="mySlides" src="img/overviewmiddlesecond.jpg">
+        <img class="mySlides" src="img/overviewleftthird.jpg">
+
+      </div>
+
+    <div>
+
+
     <div class="fullpage" id="fullpage">
 
 
@@ -339,7 +390,17 @@
         </header>
             </div>
 
-      <div class="contentfiller"> <div class="hello">hello 2</div></div>
+      <div class="contentfiller">
+        <div class="herotextbox right">
+          <p class="desctextbox">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
+        </div>
+        <div class="herogallery left">
+          <img class="mySlides" src="img/overviewmiddlesecond.jpg">
+        </div>
+
+      </div>
+
+
 
       <div class="section event" id="bexley2">
 
@@ -380,7 +441,9 @@
         </header>
       </div>
 
-      <div class="contentfiller"><div class="hello">hello 3</div></div>
+      <div class="contentfiller">
+        <div class="hello">hello 3</div>
+      </div>
 
       <div class="section event" id="upcoming">
       </div>
