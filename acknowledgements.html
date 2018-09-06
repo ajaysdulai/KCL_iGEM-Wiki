@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1">
+    <title>KCL iGEM</title>
+
+
+    <style>
+
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        body{
+        margin: 0;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        /*typography------------------------------*/
+        .title {
+            font-weight: 900;
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin-bottom: 1em;
+            padding-bottom: 2em;
+            text-emphasis: bold;
+
+        }
+        h1 {
+            font-weight: 300;
+            font-size: 2.5em;
+            text-transform: capitalize;
+            margin-top: 0em;
+        }
+
+        .title span {
+            margin-top: 1em;
+            font-weight: 200;
+            display: block;
+            font-size: .9em;
+        }
+
+
+        /*Buttons -------------------------------*/
+        .button {
+            display: inline-block;
+            font-size: 1.25rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-width: 2px;
+            border-style: solid;
+            padding: .5em 1.75em;
+        }
+
+        .button-small {
+            font-size: .9rem;
+            font-weight: 700;
+        }
+
+        .button-accent {
+            color: red;
+            border-color: red;
+        }
+
+        .button-accent:hover {
+        background: red;
+        color: #232323;
+        }
+
+
+        /*header------------------------------*/
+
+        header {
+            background-color: #232323;
+            position: absolute;
+            left: 0;
+            right: 0;
+            max-height: 7em;
+            margin-top: 0;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            float: right;
+            margin-right: 5em;
+            margin-top: 2em;
+            position: relative;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 1em;
+            position: relative;
+        }
+
+        .nav-buttons {
+            font-weight: 900;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            padding: .5em;
+            color: #FFF;
+            position: relative;
+            padding-bottom: 3em;
+        }
+
+        .nav-buttons:hover {color: red;}
+        .dropdown-nav-buttons:hover {color: red;}
+
+        .dropdown-nav-buttons {
+            font-weight: 900;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            padding: .5em;
+            color: #FFF;
+            display: none;
+            background-color:  rgba(0,0,0,.75);
+            z-index: 1;
+            width: 10em;
+            margin-left: -3em;
+        }
+        #navadjust {
+          margin-left:-0.3em;;
+        }
+        .dropdownone {
+          margin-top: 2.58em;
+        }
+        .dropdowntwo {
+            margin-top: 4.75em;
+        }
+        .dropdownthree {
+          margin-top: 6.93em;
+        }
+
+        .nav-buttons:hover .dropdown-nav-buttons{
+            display: block;
+            position: absolute;
+        }
+        .logo {
+            height: 90px;
+            width: 90px;
+            float: left;
+            margin-left: 6em;
+            margin-top: .5em;
+        }
+
+        .line {
+                width: 30%;
+                height: 1px;
+                margin: auto;
+            background: red;
+        }
+        .spacer {
+            width: 100%;
+            height: 2em;
+        }
+        .uselessspacer {
+          height: 7em;
+
+        }
+        .team h1 {
+            width: 12em;
+            margin: auto;
+            margin-top: 0em;
+            padding-bottom: .7em;
+            padding-top: 1em;
+            color: white;
+        }
+
+        .team {
+          background-color: #232323;
+          width: 100%;
+          margin-left: 0;
+          padding-left: 0;
+          height: 9.5em;
+        }
+
+        .main {
+          width:100%;
+          height: 10000em;
+          background-color: #232323;
+        }
+        .individualcontainer {
+          width: 100%;
+          height: 60em;
+          background-color: #232323;
+          outline: 2px solid #FF0000;
+          outline-offset: -10em;
+          margin-top: -1em;
+        }
+        #summary {
+          padding-top: 2em;
+          padding-left:5em;
+          padding-right: 5em;
+          color: white;
+        }
+        #individuals {
+          padding:.8em;
+          background-color: #232323;
+          width: 20%;
+          margin:auto;
+          position: relative;
+          color: #FF0000;
+        }
+        .person {
+          font-size: 2em;
+          color: white;
+        }
+
+        .companycontainer {
+          width: 100%;
+          height: 100em;
+          background-color: pink;
+        }
+        .sponsorcontainer{
+          width: 100%;
+          height:20em;
+        }
+        .logocontainer{
+          display: inline-block;
+          height: 20em;
+          width:30%;
+          background-color: #232323;
+        }
+        .descriptioncontainer {
+          width: 70%;
+          display: inline-block;
+          height: 20em;
+          background-color:#232323;
+          outline: 2px solid #FF0000;
+          outline-offset: -2em;
+        }
+        .sponsorname {
+          font-size: 1.7em;
+          margin-top: .5em;
+          margin-left: 3em;
+          padding-left: 1.2em;
+          padding-right: 1.2em;
+          background-color: #232323;
+          position: relative;
+          color: #FF0000;
+        }
+        .sponsordesc {
+          margin-top: 4.5em;
+          background-color: #232323;
+          width:90%;
+          margin-left: 3em;
+          color: white;
+
+        }
+        .left {
+          float: left;
+        }
+        .right {
+          float: right;
+        }
+
+
+    </style>
+
+
+    </head>
+
+
+    <body>
+
+    <header>
+        <img src="img/newlogo.gif" alt="logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-buttons">Home</a></li>
+                <li class="nav-buttons">Team
+                   <a href="teammembers.html" class="dropdown-nav-buttons dropdownone">Team Members</a>
+                    <a href="#" class="dropdown-nav-buttons dropdowntwo">Collaborations</a>
+                </li>
+                <li class="nav-buttons">Project
+                  <a href="#" class="dropdown-nav-buttons dropdownone">Description</a>
+                  <a href="#" class="dropdown-nav-buttons dropdowntwo">Design</a>
+                  <a href="#" class="dropdown-nav-buttons dropdownthree">Results</a>
+                </li>
+                <li class="nav-buttons">Parts
+                  <a href="#" class="dropdown-nav-buttons dropdownone">Parts Overview</a>
+                  <a href="#" class="dropdown-nav-buttons dropdowntwo">Basic Parts</a>
+                  <a href="#" class="dropdown-nav-buttons dropdownthree">Composite Parts</a>
+                </li>
+                <a href="#" class="nav-buttons">Safety</a>
+                <li class="nav-buttons">Human Practices
+                  <a href="humanpracticesoverview.html" class="dropdown-nav-buttons dropdownone" id="navadjust">Overview</a>
+                  <a href="#" class="dropdown-nav-buttons dropdowntwo" id="navadjust">Education and Engagement</a>
+                </li>
+                <a href="#" class="nav-buttons">Acknowledgements</a>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="uselessspacer"></div>
+    <div class="toptitle"></div>
+
+    <section class="team">
+      <h1>Acknowledgements</h1>
+      <div class="line"></div>
+      <div class="spacer"></div>
+    </section>
+
+    <section class="main">
+      <div class="individualcontainer">
+        <p id="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h1 id="individuals">Individuals</h1>
+        <p class="person">Carlos</p>
+        <p class="person">Peter Parker</p>
+        <p class="person">Enzo Biswas-Rodgers</p>
+        <p class="person">Sutapa Biswas</p>
+        <p class="person">Aparna Biswas</p>
+        <p class="person">Sudipto Biswas</p>
+        <p class="person">Dr. Sukanta Biswas</p>
+      </div>
+
+      <div class="companycontainer">
+        <div class="sponsorcontainer">
+          <div class="logocontainer left"></div>
+          <div class="descriptioncontainer right">
+            <h1 class="sponsorname left">Charlotte Dawkins Consulting Ltd.</h1>
+            <p class="sponsordesc">A communications and public affairs professional with over fifteen years experience. Skilled in developing and implementing communications strategies, stakeholder relationship management, crisis communication handling, change management communications, internal communications, producing policy briefings, media handling, speechwriting, strategically advising senior audiences. Possesses an excellent understanding of the routes to influence in Westminster and Whitehall.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </body>
+
+
+</html>
