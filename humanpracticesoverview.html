@@ -17,6 +17,7 @@
 
         body{
         margin: 0;
+    padding: 0;
         font-family: 'Raleway', sans-serif;
         text-align: center;
         }
@@ -30,24 +31,35 @@
             width: 95%;
             margin: 0 auto;
         }
+        .fixcontainer {
+          width:100%;
+          margin: 0 auto;
+        }
 
         /*typography------------------------------*/
         .title {
             font-weight: 900;
             font-weight: bold;
-            font-size: 2.5rem;
+            font-size: 3.2rem;
             margin-bottom: 1em;
             padding-bottom: 2em;
             text-emphasis: bold;
+        }
+        .smallertitle {
+          font-weight: 900;
+          font-weight: bold;
+          font-size: 1.4rem;
+          margin-bottom: 1em;
+          padding-top: 3.1em;
+          padding-bottom: 0em;
+          text-emphasis: bold;
 
         }
         h1 {
             font-weight: 300;
             font-size: 2.5em;
-            padding-top: 0.5em;
-            margin-top: 0em;
-            color: red;
             text-transform: capitalize;
+            margin-top: 1em;
         }
         .title span {
             margin-top: 1em;
@@ -80,19 +92,18 @@
 
         .button-accent:hover {
         background: #FF0000;
-        color: #232323;
+        color: black;
         }
 
 
         /*header------------------------------*/
 
         header {
-            background-color: #232323;
+            background-color: rgba(0,0,0,.75);
             position: absolute;
             left: 0;
             right: 0;
-            max-height: 16vh;
-            min-height: 7em;
+            max-height: 7em;
         }
 
         nav ul {
@@ -161,162 +172,29 @@
             float: left;
             margin-left: 6em;
             margin-top: .5em;
-        }
-        .uselessspacer {
-          height: 16vh;
-          background-color: #232323;
-        }
+      }
 
-        /*top------------------------------*/
-        .top {
-          background-color: #232323;
-          height: 19vh;
-        }
-        .line {
-                width: 30%;
-                height: 1.5px;
-                margin: auto;
-            background: red;
-        }
-
-        /*middle------------------------------*/
-        .middle {
-          background-color: black;
-          height: 31vh;
-          font-size: 0;
-        }
-        .middle > div {font-size: 1rem;}
-
-        .links {
-          display: inline-block;
-          width: 33.3333vw;
-          height: 30vh;
-          margin-left: 0;
-        }
-        #outreach {
-
-        }
-        #education {
-        }
-        #engagement {
-        }
-        .middledesc {
-            color: white;
-            background: rgba(0,0,0,.75);
-            position: absolute;
-            margin-top: -15vh;
-            margin-left: 13vw;
-        }
-         .middledesc p {
-            font-size: 1.2em;
-        }
+      .topspacer{height: 3em;
+      background-color: black;}
+      .background {
+          background-image: url(img/humpracticesoverview.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: auto;
+          height: 309em;
+      }
+      .backgroundfancy{
+        width: 100%;
+      }
+      .botspacer{
+        height: 1em;
+        margin-top: -1em;
+        background-color: black;
+      }
 
 
-                .slider {
-        height: inherit;
-        width: inherit;
-          margin: auto;
-          position: relative;
-        }
-        .slide1,.slide2,.slide3,.slide4,.slide5 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-        }
-        .slide1 {
-              background-size: cover;
-            animation:fade 8s infinite;
-        -webkit-animation:fade 8s infinite;
 
-        }
-        .slide2 {
-              background-size: cover;
-            animation:fade2 8s infinite;
-        -webkit-animation:fade2 8s infinite;
-        }
-        .slide3 {
-              background-size: cover;
-            animation:fade3 8s infinite;
-        -webkit-animation:fade3 8s infinite;
-        }
-        #leftfirst {
-          background-image: url(img/overviewleftfirst.jpg);
-        }
-        #leftsecond {
-          background-image: url(img/overviewleftsecond.jpg);
-        }
-        #leftthird {
-          background-image: url(img/overviewleftthird.jpg);
-        }
-        #middlefirst {
-          background-image: url(img/overviewmiddlefirst.jpg);
-        }
-        #middlesecond {
-          background-image: url(img/overviewmiddlesecond.jpg);
-        }
-        #middlethird {
-          background-image: url(img/overviewmiddlethird.jpg);
-        }
-        #rightfirst {
-          background-image: url(img/overviewrightfirst.jpg);
-        }
-        #rightsecond {
-          background-image: url(img/overviewrightsecond.jpg);
-        }
-        #rightthird {
-          background-image: url(img/overviewrightthird.jpg);
-        }
 
-        @keyframes fade
-        {
-          0%   {opacity:1}
-          33.333% { opacity: 0}
-          66.666% { opacity: 0}
-          100% { opacity: 1}
-        }
-        @keyframes fade2
-        {
-          0%   {opacity:0}
-          33.333% { opacity: 1}
-          66.666% { opacity: 0 }
-          100% { opacity: 0}
-        }
-        @keyframes fade3
-        {
-          0%   {opacity:0}
-          33.333% { opacity: 0}
-          66.666% { opacity: 1}
-          100% { opacity: 0}
-        }
-
-        /*bottom------------------------------*/
-        .bottom {
-          height: 34vh;
-          background-color: black;
-        }
-        .overviewtextbox {
-          background-color: black;
-          height: 34vh;
-          width: 100vw;
-          margin: auto;
-          outline: 2px solid #FF0000;
-          color: #FFF;
-          outline-offset: -2.5em;
-        }
-        .overviewtextbox h1 {
-          padding-top: .3em;
-          background-color: black;
-          width: 17vw;
-          margin-left: 2em;
-          z-index: 2;
-          position: sticky;
-        }
-        #overviewdesc {
-          padding-left: 5em;
-          padding-right: 5em;
-          margin: auto;
-          text-align: middle;
-        }
 
     </style>
 
@@ -349,60 +227,26 @@
                 <a href="#" class="nav-buttons">Safety</a>
                 <li class="nav-buttons">Human Practices
                   <a href="#" class="dropdown-nav-buttons dropdownone" id="navadjust">Overview</a>
-                  <a href="#" class="dropdown-nav-buttons dropdowntwo" id="navadjust">Education and Engagement</a>
+                  <a href="educationandmanagement.html" class="dropdown-nav-buttons dropdowntwo" id="navadjust">Education and Engagement</a>
                 </li>
+                <a href="acknowledgements.html" class="nav-buttons">Acknowledgements</a>
             </ul>
         </nav>
     </header>
-    <div class="uselessspacer"></div>
 
-    <section class="top">
-      <h1>Human Practices</h1>
-      <div class="line"></div>
-    </section>
+<div class="topspacer"></div>
+<img class="backgroundfancy" src="img/humpracticesoverview.png"></img>
+<div class="botspacer"</div>
 
 
-    <section class="middle">
-      <div class="links" id="outreach">
-        <div class='slider'>
-          <div class='slide1' id="leftfirst"></div>
-          <div class='slide2'id="leftsecond"></div>
-          <div class='slide3' id="leftthird"></div>
-        </div>
-        <figcaption class="middledesc">
-            <a href="" class="button button-accent button-small">Outreach</a>
-        </figcaption>
-      </div>
 
-      <div class="links" id="education">
-        <div class='slider'>
-          <div class='slide1' id="middlefirst"></div>
-          <div class='slide2' id="middlesecond"></div>
-          <div class='slide3' id="middlethird"></div>
-        </div>
-        <figcaption class="middledesc">
-            <a href="education.html" class="button button-accent button-small">Education</a>
-        </figcaption>
-      </div>
 
-      <div class="links" id="engagement">
-        <div class='slider'>
-          <div class='slide1' id="rightfirst"></div>
-          <div class='slide2' id="rightsecond"></div>
-          <div class='slide3' id="rightthird"></div>
-        </div>
-        <figcaption class="middledesc">
-            <a href="" class="button button-accent button-small">Engagement</a>
-        </figcaption>
-      </div>
-    </section>
 
-    <section class="bottom">
-      <div class="overviewtextbox">
-        <div id="overviewblock"><h1>Overview</h1></div>
-        <p id="overviewdesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </section>
+
+
+
 
     </body>
+
+
 </html>
