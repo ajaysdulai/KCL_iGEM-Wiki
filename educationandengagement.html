@@ -5,7 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width= device-width, initial-scale=1">
     <title>KCL iGEM</title>
+    <script>
+        Vue.config.productionTip = false
 
+        Vue.component('start', {
+          template: '#start'
+        })
+
+        Vue.component('next', {
+          template: '#next'
+        })
+
+        Vue.component('test', {
+          template: '#test'
+        })
+
+
+        new Vue({
+          el: '#app',
+
+          data: {
+            page: 'start'
+          },
+
+          methods: {
+            onChangePage(to) {
+              this.page = to
+            }
+          }
+        })    
+    </script>
 
     <style>
 
