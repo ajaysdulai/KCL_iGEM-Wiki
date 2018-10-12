@@ -72,8 +72,8 @@
         }
 
 
-        /*Buttons -------------------------------*/
-        .button {
+        /*buttonmasks -------------------------------*/
+        .buttonmask {
             display: inline-block;
             font-size: 1.25rem;
             text-decoration: none;
@@ -83,17 +83,17 @@
             padding: .5em 1.75em;
         }
 
-        .button-small {
+        .buttonmask-small {
             font-size: .9rem;
             font-weight: 700;
         }
 
-        .button-accent {
+        .buttonmask-accent {
             color: #FF0000;
             border-color: #FF0000;
         }
 
-        .button-accent:hover {
+        .buttonmask-accent:hover {
         background: #FF0000;
         color: black;
         }
@@ -125,7 +125,7 @@
             position: relative;
         }
 
-        .nav-buttons {
+        .nav-buttonmasks {
             font-weight: 900;
             text-decoration: none;
             text-transform: uppercase;
@@ -136,10 +136,10 @@
             padding-bottom: 3em;
         }
 
-        .nav-buttons:hover {color: #FF0000;}
-        .dropdown-nav-buttons:hover {color: #FF0000;}
+        .nav-buttonmasks:hover {color: #FF0000;}
+        .dropdown-nav-buttonmasks:hover {color: #FF0000;}
 
-        .dropdown-nav-buttons {
+        .dropdown-nav-buttonmasks {
             font-weight: 900;
             text-decoration: none;
             text-transform: uppercase;
@@ -165,7 +165,7 @@
           margin-top: 6.93em;
         }
 
-        .nav-buttons:hover .dropdown-nav-buttons{
+        .nav-buttonmasks:hover .dropdown-nav-buttonmasks{
             display: block;
             position: absolute;
         }
@@ -194,6 +194,16 @@
       .backgroundfancy{
         width: 100%;
       }
+      .backgroundfancy {
+        background-color: pink;
+        height: 300em;
+        width: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #backgroundfancy{
+        width: 100%;
+      }
       .botspacer{
         height: 1em;
         margin-top: -1em;
@@ -217,33 +227,36 @@
 
         <nav>
             <ul>
-                <li><a href="index.html" class="nav-buttons">Home</a></li>
-                <li class="nav-buttons">Team
-                   <a href="teammembers.html" class="dropdown-nav-buttons dropdownone">Team Members</a>
-                    <a href="#" class="dropdown-nav-buttons dropdowntwo">Collaborations</a>
+                <li><a href="index.html" class="nav-buttonmasks">Home</a></li>
+                <li class="nav-buttonmasks">Team
+                   <a href="teammembers.html" class="dropdown-nav-buttonmasks dropdownone">Team Members</a>
+                    <a href="#" class="dropdown-nav-buttonmasks dropdowntwo">Collaborations</a>
                 </li>
-                <li class="nav-buttons">Project
-                  <a href="#" class="dropdown-nav-buttons dropdownone">Description</a>
-                  <a href="#" class="dropdown-nav-buttons dropdowntwo">Design</a>
-                  <a href="#" class="dropdown-nav-buttons dropdownthree">Results</a>
+                <li class="nav-buttonmasks">Project
+                  <a href="#" class="dropdown-nav-buttonmasks dropdownone">Description</a>
+                  <a href="#" class="dropdown-nav-buttonmasks dropdowntwo">Design</a>
+                  <a href="#" class="dropdown-nav-buttonmasks dropdownthree">Results</a>
                 </li>
-                <li class="nav-buttons">Parts
-                  <a href="#" class="dropdown-nav-buttons dropdownone">Parts Overview</a>
-                  <a href="#" class="dropdown-nav-buttons dropdowntwo">Basic Parts</a>
-                  <a href="#" class="dropdown-nav-buttons dropdownthree">Composite Parts</a>
+                <li class="nav-buttonmasks">Parts
+                  <a href="#" class="dropdown-nav-buttonmasks dropdownone">Parts Overview</a>
+                  <a href="#" class="dropdown-nav-buttonmasks dropdowntwo">Basic Parts</a>
+                  <a href="#" class="dropdown-nav-buttonmasks dropdownthree">Composite Parts</a>
                 </li>
-                <a href="#" class="nav-buttons">Safety</a>
-                <li class="nav-buttons">Human Practices
-                  <a href="#" class="dropdown-nav-buttons dropdownone" id="navadjust">Overview</a>
-                  <a href="educationandmanagement.html" class="dropdown-nav-buttons dropdowntwo" id="navadjust">Education and Engagement</a>
+                <a href="#" class="nav-buttonmasks">Safety</a>
+                <li class="nav-buttonmasks">Human Practices
+                  <a href="#" class="dropdown-nav-buttonmasks dropdownone" id="navadjust">Overview</a>
+                  <a href="educationandmanagement.html" class="dropdown-nav-buttonmasks dropdowntwo" id="navadjust">Education and Engagement</a>
                 </li>
-                <a href="acknowledgements.html" class="nav-buttons">Acknowledgements</a>
+                <a href="acknowledgements.html" class="nav-buttonmasks">Acknowledgements</a>
             </ul>
         </nav>
     </header>
 
 <div class="topspacer"></div>
-<img class="backgroundfancy" src="img/humpracticesoverview.png"></img>
+<div class="backgroundfancy">
+<img id="backgroundfancy"src="img/integratedhpgraphic.png"></img>
+</div>
+
 <div class="botspacer"</div>
 
 

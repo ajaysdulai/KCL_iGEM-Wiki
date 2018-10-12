@@ -1,0 +1,443 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1">
+    <title>KCL iGEM</title>
+
+
+    <style>
+
+
+        * {
+            box-sizing: border-box!important;
+            font-family: 'Raleway', sans-serif!important;
+        }
+
+        body{
+        margin: 0!important;
+    padding: 0!important;
+        font-family: 'Raleway', sans-serif!important;
+        text-align: center!important;
+        }
+        a {        font-family: 'Raleway', sans-serif!important;}
+}
+
+        img {
+            max-width: 100%!important;
+            height: auto!important;
+        }
+
+        .container {
+            width: 95%!important;
+            margin: 0 auto!important;
+        }
+        .fixcontainer {
+          width:100%!important;
+          margin: 0 auto!important;
+        }
+
+        /*typography------------------------------*/
+        .title {
+            font-weight: 900!important;
+            font-weight: bold!important;
+            font-size: 3.2rem!important;
+            margin-bottom: 1em!important;
+            padding-bottom: 2em!important;
+            text-emphasis: bold!important;
+        }
+        .smallertitle {
+          font-weight: 900!important;
+          font-weight: bold!important;
+          font-size: 1.4rem!important;
+          margin-bottom: 1em!important;
+          padding-top: 3.1em!important;
+          padding-bottom: 0em!important;
+          text-emphasis: bold!important;
+
+        }
+        h1 {
+            font-weight: 300!important;
+            font-size: 2.5em!important;
+            text-transform: capitalize!important;
+            margin-top: 0em!important;
+            padding-top: 1em!important;
+
+        }
+        .title span {
+            margin-top: 1em!important;
+            font-weight: 200!important;
+            display: block!important;
+            font-size: .9em!important;
+        }
+
+
+        /*buttons -------------------------------*/
+        .button {
+            display: inline-block!important;
+            font-size: 1.25rem!important;
+            text-decoration: none!important;
+            text-transform: uppercase!important;
+            border-width: 2px!important;
+            border-style: solid!important;
+            padding: .5em 1.75em!important;
+        }
+        .button {
+          all:revert!important;
+        }
+
+
+        .button-small {
+            font-size: .9rem!important;
+            font-weight: 700!important;
+        }
+
+        .button-accent {
+            color: #FF0000!important;
+            border-color: #FF0000!important;
+        }
+
+        .button-accent:hover {
+        background: #FF0000!important;
+        color: black!important;
+        }
+
+
+        /*header------------------------------*/
+
+        header {
+            background-color: rgba(0,0,0,.75)!important;
+            position: absolute!important;
+            left: 0!important;
+            right: 0!important;
+            max-height: 7em!important;
+        }
+
+        nav ul {
+            margin: 0!important;
+            padding: 0!important;
+            list-style: none!important;
+            float: right!important;
+            margin-right: 5em!important;
+            margin-top: 2em!important;
+            position: relative!important;
+        }
+
+        nav li {
+            display: inline-block!important;
+            margin: 1em!important;
+            position: relative!important;
+        }
+
+        .nav-buttons {
+            font-weight: 900!important;
+            text-decoration: none!important;
+            text-transform: uppercase!important;
+            font-size: 0.95rem!important;
+            padding: .5em!important;
+            color: #FFF!important;
+            position: relative!important;
+            padding-bottom: 3em!important;
+        }
+
+        .nav-buttons:hover {color: #FF0000!important;}
+        .dropdown-nav-buttons:hover {color: #FF0000!important;}
+
+        .dropdown-nav-buttons {
+            font-weight: 900!important;
+            text-decoration: none!important;
+            text-transform: uppercase!important;
+            font-size: 0.95rem!important;
+            padding: .5em!important;
+            color: #FFF!important;
+            display: none!important;
+            background-color:  rgba(0,0,0,.75)!important;
+            z-index: 1!important;
+            width: 10em!important;
+            margin-left: -3em!important;
+        }
+        #navadjust {
+          margin-left:-0.3em!important;
+        }
+
+        .dropdownone {
+          margin-top: 2.58em!important;
+        }
+        .dropdowntwo {
+            margin-top: 4.75em!important;
+        }
+        .dropdownthree {
+          margin-top: 6.93em!important;
+        }
+
+        .nav-buttons:hover .dropdown-nav-buttons{
+            display: block!important;
+            position: absolute!important;
+        }
+        .logo {
+            height: 90px!important;
+            width: 90px!important;
+            float: left!important;
+            margin-left: 6em!important;
+            margin-top: .5em!important;
+        }
+        .uselessspacer {
+          height: 16vh;
+          background-color: black;
+        }
+
+        /*top------------------------------*/
+        .top {
+          background-color: black;
+          height: 19vh;
+        }
+        .line {
+                width: 30%;
+                height: 1.5px;
+                margin: auto;
+            background: red;
+        }
+        .top h1 {
+          color: red!important;
+        }
+
+        /*content------------------------------*/
+        .divisiontitletext {
+          margin: auto;
+
+          font-size: 2em!important;
+        }
+        .leftline {
+          float: left;
+          width: 37%;
+          height: 1.5px;
+          background: red;
+          margin-left: -33em!important;
+          margin-top: 5em;
+        }
+        .divisiontitle {
+          width: 100%;
+          height: 7em;
+          background-color: black;
+          color: white;
+          margin: auto;
+        }
+        .collab {
+          width: 100%;
+          background-color: black;
+          outline: 2px solid red;
+          outline-offset: -2em;
+        }
+        #first {
+          height: 155em;
+        }
+        #second {
+          height: 30em;
+        }
+        #third {
+          height: 20em;
+        }
+        .longname {
+          font-size: 2em;
+          color: white;
+          background-color: black;
+          width: 80vw;
+          margin-top: .6em;
+          z-index: 20;
+          position: absolute;
+          margin: auto;
+          margin-left: 10vw;
+          padding-top: .4em;
+        }
+        #secondlongname {
+          width: 40vw;
+          margin-left: 30vw;
+        }
+        .smallname {
+          font-size: 2em;
+          color: red;
+          background-color: black;
+          width: 18vw;
+          margin-top: .4em;
+          z-index: 20;
+          position: absolute;
+        }
+        .leftname {
+          float:left;
+          margin-left: 3em!important;
+        }
+        .rightname {
+          float:right;
+          margin-left: 60vw;
+        }
+
+        .description {
+          text-align: left;
+          background-color: black;
+          padding-top: 2em;
+          width: 80vw;
+          margin: auto;
+          font-size: 1.2em;
+          color: white;
+        }
+        .descriptionfix {
+          text-align: left;
+          background-color: black;
+          padding-top: 2em;
+          width: 80vw;
+          margin: auto;
+          font-size: 1.2em;
+          color: white;
+        }
+        .leftdescription {
+          float: left;
+          margin-left: 10vw;
+          width: 40vw;
+          display: inline-block;
+          background-color: black;
+          padding-top: 4em;
+
+        }
+        .ourwiki {
+          display: inline-block;
+          width: 30vw;
+          background-color: black;
+          float: left;
+          margin-left: 8vw;
+        }
+        .firstdescription{
+          padding-top: 8em;
+        }
+        .linedescadjust {
+          margin-top: 2em;
+          margin
+        }
+        .bullet {
+          margin-top: 1em;
+          color: white;
+          font-size: 1.1em;
+          text-align: left;
+        }
+        .ourwikidesc {
+          margin-bottom: 1em;
+        }
+        .test {
+          height: 25em;
+          background-color: black;
+        }
+        .collabinfographic {
+          width: 70vw;
+          height: 100em;
+          background-image: url(img/collaborationinfographic.png);
+          background-size: cover;
+            margin: auto;
+        }
+        .spacer {
+          background-color: black;
+          height: 3em;
+        }
+
+
+
+
+
+
+    </style>
+
+
+    </head>
+
+
+    <body>
+
+    <header>
+        <img src="img/newlogo.gif" alt="logo" class="logo">
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-buttons standalonenav">Home</a></li>
+                <li class="nav-buttons">Team
+                   <a href="teammembers.html" class="dropdown-nav-buttons dropdownone">Team Members</a>
+                    <a href="#" class="dropdown-nav-buttons dropdowntwo">Collaborations</a>
+                </li>
+                <li class="nav-buttons">Project
+                  <a href="#" class="dropdown-nav-buttons dropdownone">Description</a>
+                  <a href="#" class="dropdown-nav-buttons dropdowntwo">Design</a>
+                  <a href="#" class="dropdown-nav-buttons dropdownthree">Results</a>
+                </li>
+                <li class="nav-buttons">Parts
+                  <a href="#" class="dropdown-nav-buttons dropdownone">Parts Overview</a>
+                  <a href="#" class="dropdown-nav-buttons dropdowntwo">Basic Parts</a>
+                  <a href="#" class="dropdown-nav-buttons dropdownthree">Composite Parts</a>
+                </li>
+                <a href="#" class="nav-buttons standalonenav">Safety</a>
+                <li class="nav-buttons">Human Practices
+                  <a href="integratedhumanpractices.html" class="dropdown-nav-buttons dropdownone" id="navadjust">Integrated HP</a>
+                  <a href="educationandengagement.html" class="dropdown-nav-buttons dropdowntwo" id="navadjust">Education and Engagement</a>
+                </li>
+                <a href="acknowledgements.html" class="nav-buttons standalonenav">Acknowledgements</a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="uselessspacer"></div>
+
+    <section class="top">
+      <h1>Collaborations</h1>
+      <div class="line"></div>
+    </section>
+
+    <section class="collabcontent">
+      <div class="collab" id="first">
+        <div class="longname">What does DNA stand for? The National Dyslexics Association!</div>
+        <div class="firstdescription description">Ignoring the attitudes of Brexit, our iGEM team has set up a two-way collaboration with iGEM Marburg. We’ve worked hard to create easily understandable resources to help teams make the content they produce more accessible for those with disabilities and special educational needs.
+        </div>
+          <div class="line linedescadjust"></div>
+        <div class="leftdescription description">iGEM Marburg reached out to us, asking if our wiki fit their criteria for being an accessible web-page. We checked out their page, and we met most of them!
+        </div>
+        <div class="test">
+          <ul class="ourwiki">
+            <div class="description ourwiki ourwikidesc">Our wiki has:</div>
+            <li class="bullet">Has a high colour contrast. Our text is easily distinguishable from the background, and we do not use a red-green combination to make text distinctive.</li>
+            <li class="bullet">Text and headings are distinguished by both size and colour, and is defined in boxes/obvious segmentation.
+The links we use are descriptive.</li>
+            <li class="bullet">The page is scalable- we used % and ems.</li>
+            <li class="bullet">Information that belongs together is shown in one frame.</li>
+          </ul>
+        </div>
+        <div class="line"></div>
+        <div class="description">We sent them an infographic (see below) in turn on how to make sure all content the team produces is dyslexia friendly. iGEM Marburg were proud to tell us that they had made an effort tick off every box!
+        </div>
+        <div class="collabinfographic"></div>
+      </div>
+
+      <div class="collab" id="second">
+        <div class="longname" id="secondlongname">Double Trouble(shooting)</div>
+        <div class="firstdescription description">In September, we hosted a troubleshooting meet-up with Imperial, UCL and Westminster that had been in the workings since the Oxford Conference. We were lucky enough to have design students from UAL give us advice on how to make the materials we present look decent, and had the opportunity to discuss our projects.
+        </div>
+        <div class="spacer"></div>
+        <div class="line"></div>
+        <div class="description">Imperial were keen to continue our collaboration, and asked us to review the app that they are producing. In turn, they offered to work with our Max to help him with mathematical modelling.
+        </div>
+      </div>
+      <div>
+
+      <div class="collab" id="third">
+        <div class="longname" id="secondlongname">Wading into Research</div>
+        <div class="firstdescription descriptionfix">We kicked off our collaborations by supporting Warwick’s lab research. Our own lab team headed down to London’s “beach” and into the river to collect samples of water and sediment from the Thames.
+        </div>
+      </div>
+
+      </div>
+
+    </section>
+
+
+
+
+
+
+    </body>
+
+
+</html>

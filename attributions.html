@@ -1,0 +1,443 @@
+black<!doctype html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1">
+    <title>KCL iGEM</title>
+
+
+    <style>
+
+
+        * {
+            box-sizing: border-box!important;
+            font-family: 'Raleway', sans-serif!important;
+        }
+
+        body{
+        margin: 0!important;
+    padding: 0!important;
+        font-family: 'Raleway', sans-serif!important;
+        text-align: center!important;
+        }
+        a {        font-family: 'Raleway', sans-serif!important;}
+}
+
+        img {
+            max-width: 100%!important;
+            height: auto!important;
+        }
+
+        .container {
+            width: 95%!important;
+            margin: 0 auto!important;
+        }
+        .fixcontainer {
+          width:100%!important;
+          margin: 0 auto!important;
+        }
+
+        /*typography------------------------------*/
+        .title {
+            font-weight: 900!important;
+            font-weight: bold!important;
+            font-size: 3.2rem!important;
+            margin-bottom: 1em!important;
+            padding-bottom: 2em!important;
+            text-emphasis: bold!important;
+        }
+        .smallertitle {
+          font-weight: 900!important;
+          font-weight: bold!important;
+          font-size: 1.4rem!important;
+          margin-bottom: 1em!important;
+          padding-top: 3.1em!important;
+          padding-bottom: 0em!important;
+          text-emphasis: bold!important;
+
+        }
+        h1 {
+            font-weight: 300!important;
+            font-size: 2.5em!important;
+            text-transform: capitalize!important;
+            margin-top: 0em!important;
+            padding-top: 1em!important;
+
+        }
+        .title span {
+            margin-top: 1em!important;
+            font-weight: 200!important;
+            display: block!important;
+            font-size: .9em!important;
+        }
+
+
+        /*buttons -------------------------------*/
+        .button {
+            display: inline-block!important;
+            font-size: 1.25rem!important;
+            text-decoration: none!important;
+            text-transform: uppercase!important;
+            border-width: 2px!important;
+            border-style: solid!important;
+            padding: .5em 1.75em!important;
+        }
+        .button {
+          all:revert!important;
+        }
+
+
+        .button-small {
+            font-size: .9rem!important;
+            font-weight: 700!important;
+        }
+
+        .button-accent {
+            color: #FF0000!important;
+            border-color: #FF0000!important;
+        }
+
+        .button-accent:hover {
+        background: #FF0000!important;
+        color: black!important;
+        }
+
+
+        /*header------------------------------*/
+
+        header {
+            background-color: rgba(0,0,0,.75)!important;
+            position: absolute!important;
+            left: 0!important;
+            right: 0!important;
+            max-height: 7em!important;
+        }
+
+        nav ul {
+            margin: 0!important;
+            padding: 0!important;
+            list-style: none!important;
+            float: right!important;
+            margin-right: 5em!important;
+            margin-top: 2em!important;
+            position: relative!important;
+        }
+
+        nav li {
+            display: inline-block!important;
+            margin: 1em!important;
+            position: relative!important;
+        }
+
+        .nav-buttons {
+            font-weight: 900!important;
+            text-decoration: none!important;
+            text-transform: uppercase!important;
+            font-size: 0.95rem!important;
+            padding: .5em!important;
+            color: #FFF!important;
+            position: relative!important;
+            padding-bottom: 3em!important;
+        }
+
+        .nav-buttons:hover {color: #FF0000!important;}
+        .dropdown-nav-buttons:hover {color: #FF0000!important;}
+
+        .dropdown-nav-buttons {
+            font-weight: 900!important;
+            text-decoration: none!important;
+            text-transform: uppercase!important;
+            font-size: 0.95rem!important;
+            padding: .5em!important;
+            color: #FFF!important;
+            display: none!important;
+            background-color:  rgba(0,0,0,.75)!important;
+            z-index: 1!important;
+            width: 10em!important;
+            margin-left: -3em!important;
+        }
+        #navadjust {
+          margin-left:-0.3em!important;
+        }
+
+        .dropdownone {
+          margin-top: 2.58em!important;
+        }
+        .dropdowntwo {
+            margin-top: 4.75em!important;
+        }
+        .dropdownthree {
+          margin-top: 6.93em!important;
+        }
+
+        .nav-buttons:hover .dropdown-nav-buttons{
+            display: block!important;
+            position: absolute!important;
+        }
+        .logo {
+            height: 90px!important;
+            width: 90px!important;
+            float: left!important;
+            margin-left: 6em!important;
+            margin-top: .5em!important;
+        }
+        .uselessspacer {
+          height: 16vh;
+          background-color: black;
+        }
+
+        /*top------------------------------*/
+        .top {
+          background-color: black;
+          height: 19vh;
+        }
+        .line {
+                width: 30%;
+                height: 1.5px;
+                margin: auto;
+            background: red;
+        }
+        .top h1 {
+          color: red!important;
+        }
+
+        /*content------------------------------*/
+        .divisiontitletext {
+          margin: auto;
+
+          font-size: 2em!important;
+        }
+        .leftline {
+          float: left;
+          width: 37%;
+          height: 1.5px;
+          background: red;
+          margin-left: -33em!important;
+          margin-top: 5em;
+        }
+        .divisiontitle {
+          width: 100%;
+          height: 7em;
+          background-color: black;
+          color: white;
+          margin: auto;
+        }
+        .person {
+          width: 100%;
+          height: 12.5em;
+          background-color: black;
+          outline: 2px solid red;
+          outline-offset: -2em;
+        }
+        .longname {
+          font-size: 2em;
+          color: red;
+          background-color: black;
+          width: 30vw;
+          margin-top: .4em;
+          z-index: 20;
+          position: absolute;
+        }
+        .smallname {
+          font-size: 2em;
+          color: red;
+          background-color: black;
+          width: 18vw;
+          margin-top: .4em;
+          z-index: 20;
+          position: absolute;
+        }
+        .leftname {
+          float:left;
+          margin-left: 3em!important;
+        }
+        .rightname {
+          float:right;
+          margin-left: 60vw;
+        }
+
+        .description {
+          text-align: left;
+          padding-top: 5em;
+          background-color: black;
+          width: 80vw;
+          margin: auto;
+          font-size: 1.1em;
+          color: white;
+        }
+        .person a {
+
+        }
+
+
+
+
+
+
+    </style>
+
+
+    </head>
+
+
+    <body>
+
+    <header>
+        <img src="img/newlogo.gif" alt="logo" class="logo">
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-buttons standalonenav">Home</a></li>
+                <li class="nav-buttons">Team
+                   <a href="teammembers.html" class="dropdown-nav-buttons dropdownone">Team Members</a>
+                    <a href="#" class="dropdown-nav-buttons dropdowntwo">Collaborations</a>
+                </li>
+                <li class="nav-buttons">Project
+                  <a href="#" class="dropdown-nav-buttons dropdownone">Description</a>
+                  <a href="#" class="dropdown-nav-buttons dropdowntwo">Design</a>
+                  <a href="#" class="dropdown-nav-buttons dropdownthree">Results</a>
+                </li>
+                <li class="nav-buttons">Parts
+                  <a href="#" class="dropdown-nav-buttons dropdownone">Parts Overview</a>
+                  <a href="#" class="dropdown-nav-buttons dropdowntwo">Basic Parts</a>
+                  <a href="#" class="dropdown-nav-buttons dropdownthree">Composite Parts</a>
+                </li>
+                <a href="#" class="nav-buttons standalonenav">Safety</a>
+                <li class="nav-buttons">Human Practices
+                  <a href="integratedhumanpractices.html" class="dropdown-nav-buttons dropdownone" id="navadjust">Integrated HP</a>
+                  <a href="educationandengagement.html" class="dropdown-nav-buttons dropdowntwo" id="navadjust">Education and Engagement</a>
+                </li>
+                <a href="acknowledgements.html" class="nav-buttons standalonenav">Acknowledgements</a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="uselessspacer"></div>
+
+    <section class="top">
+      <h1>Attributions</h1>
+      <div class="line"></div>
+    </section>
+
+
+    <section class="teamdivision" id="publicengagementandmarketing">
+      <div class="divisiontitle">
+        <h1 class="divisiontitletext">Public Engagement and Marketing</h1>
+      </div>
+
+
+      <div class="person" id="lux">
+        <div class="smallname leftname">Lux Step</div>
+        <div class="description">Lux has worked incredibly hard on our digital and social media. Any of the photos you see have been taken by them! They have also done research on UK team funding and communications, and UK supermarket antibiotic policy.
+        </div>
+      </div>
+      <div class="person" id="Maya">
+        <div class="longname rightname">Maya Biswas-Whittaker</div>
+        <div class="description">Maya has been focused on producing materials for educational visits, meet-ups and conferences, and the website- as well as organising collaborations with other teams. She also designed our banner for the giant jamboree!
+        </div>
+      </div>
+      <div class="person" id="desiree">
+        <div class="longname leftname">Desiree McCann</div>
+        <div class="description">Desiree has done so much for our team! As well as influencing the theme of our lab project, and coming up with our slogan, she has organised workshops and fundraising, and designed our fundraising materials!
+        </div>
+      </div>
+      <div class="person" id="ella">
+        <div class="longname rightname">Ella Boothman</div>
+        <div class="description">Ella has been busy contacting anyone and everyone you can think of through running social media, translating fundraising materials for different companies and organising events.</div>
+      </div>
+      <div class="person" id="kat">
+        <div class="longname leftname">Katarzyna Plesniar</div>
+        <div class="description">Kat has been there from the start, recruiting and interviewing members. She’s helped with sponsorship and event organisation, as well as producing our brochure for Kings’ 2029 Vision.
+        </div>
+      </div>
+      <div class="person" id="joao">
+        <div class="longname rightname">João Guilherme</div>
+        <div class="description">João is our resident adventurer, who headed off to Kenya this summer and taught the basics of synthetic biology to the children he was working with.
+        </div>
+      </div>
+    </section>
+
+    <section class="teamdivision" id="publicengagementandmarketing">
+      <div class="divisiontitle">
+        <h1 class="divisiontitletext">Technology and Wiki Development</h1>
+      </div>
+
+      <div class="person" id="ajay">
+        <div class="smallname leftname">Ajay Dulai</div>
+        <div class="description">Ajay has produced this wiki. There is so much the rest of the team doesn’t understand about what he does- so we just step back and watch the magic happen.
+        </div>
+      </div>
+      <div class="person" id="max">
+        <div class="smallname rightname">Max Grogan</div>
+        <div class="description">Max is another tech wizard. He’s helped develop and debug the wiki with Ajay, and has done the computational modelling of the sRNA-GFP gene system. Sounds lit.
+        </div>
+      </div>
+    </section>
+
+    <section class="teamdivision" id="Lab">
+      <div class="divisiontitle">
+        <h1 class="divisiontitletext">Lab Team</h1>
+      </div>
+
+      <div class="person" id="maria">
+        <div class="longname leftname">Maria-Jose Ramos </div>
+        <div class="description">Majo has been in the lab day in day out, working on the InterLab study and assembly of our biobricks. She has also contributed to the documentation of all of the work the lab team has done.
+        </div>
+      </div>
+      <div class="person" id="deeksha">
+        <div class="smallname rightname">Deeksha Raju</div>
+        <div class="description">Deeksha has been knee-deep in papers, looking at literature research before the project, form-filling for the interlab study and keeping the notebook up to date.
+        </div>
+      </div>
+      <div class="person" id="anthony">
+        <div class="smallname leftname">Anthony Chau</div>
+        <div class="description">Anthony is another original team member and general all-rounder, conducting interviews and setting up social media pages. He’s secured sponsors and worked hard in the lab all summer.
+        </div>
+      </div>
+      <div class="person" id="shubh">
+        <div class="longname rightname">Shubhankar Sinha</div>
+        <div class="description">Shubh has not only been working in the lab, but also working hard on spreading awareness about our team and our project, conducting interviews with doctors and scientists.
+        </div>
+      </div>
+      <div class="person" id="josephine">
+        <div class="smallname leftname">Josephine Eum</div>
+        <div class="description">Jo has used her expertise from working in science education to help produce materials for educational visits, and draft the abstract and project description for the lab work she’s been focused on.
+        </div>
+      </div>
+      <div class="person" id="vivian">
+        <div class="smallname rightname">Vivian Chu</div>
+        <div class="description">Viv has made sure that all the hard work she and the others are doing in the lab has not gone unnoticed on social media and has helped devise a lot of material for different presentations.
+        </div>
+      </div>
+    </section>
+
+
+    <section class="teamdivision" id="Lab">
+      <div class="divisiontitle">
+        <h1 class="divisiontitletext">People Who Have Kindly Helped</h1>
+      </div>
+
+
+      <div class="person" id="priscilla">
+        <div class="longname leftname">Priscilla Yu</div>
+        <div class="description">Priscilla is a first year graphic design student at Chelsea College of Arts who helped with the background and title art for the wiki.
+        </div>
+      </div>
+      <div class="person" id="kevin">
+        <div class="longname rightname">Kevin Coward</div>
+        <div class="description">Kevin, an absolute legend, is a graphic designer and created our team logo. Thank you Kevin!
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+
+
+    </body>
+
+
+</html>

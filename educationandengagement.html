@@ -1,6 +1,13 @@
-<!doctype html>
 <html>
     <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="fullpage.css" />
+  	<script src="vendors/easings.min.js"></script>
+  	<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+  	<script type="text/javascript" src="fullpage.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width= device-width, initial-scale=1">
@@ -57,8 +64,8 @@
         }
 
 
-        /*Buttons -------------------------------*/
-        .button {
+        /*buttonmasks -------------------------------*/
+        .buttonmask {
             display: inline-block;
             font-size: 1.25rem;
             text-decoration: none;
@@ -68,17 +75,17 @@
             padding: .5em 1.75em;
         }
 
-        .button-small {
+        .buttonmask-small {
             font-size: .9rem;
             font-weight: 700;
         }
 
-        .button-accent {
+        .buttonmask-accent {
             color: #FF0000;
             border-color: #FF0000;
         }
 
-        .button-accent:hover {
+        .buttonmask-accent:hover {
         background: #FF0000;
         color: black;
         }
@@ -111,7 +118,7 @@
             position: relative;
         }
 
-        .nav-buttons {
+        .nav-buttonmasks {
             font-weight: 900;
             text-decoration: none;
             text-transform: uppercase;
@@ -122,10 +129,10 @@
             padding-bottom: 3em;
         }
 
-        .nav-buttons:hover {color: #FF0000;}
-        .dropdown-nav-buttons:hover {color: #FF0000;}
+        .nav-buttonmasks:hover {color: #FF0000;}
+        .dropdown-nav-buttonmasks:hover {color: #FF0000;}
 
-        .dropdown-nav-buttons {
+        .dropdown-nav-buttonmasks {
             font-weight: 900;
             text-decoration: none;
             text-transform: uppercase;
@@ -151,7 +158,7 @@
           margin-top: 6.93em;
         }
 
-        .nav-buttons:hover .dropdown-nav-buttons{
+        .nav-buttonmasks:hover .dropdown-nav-buttonmasks{
             display: block;
             position: absolute;
         }
@@ -292,6 +299,16 @@
           33.333% { opacity: 0}
           66.666% { opacity: 1}
           100% { opacity: 0}
+        }
+        .backgroundfancy {
+          background-color: pink;
+          height: 300em;
+          width: auto;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        #backgroundfancy{
+          width: 100%;
         }
 
         /*scrolldown------------------------------*/
@@ -642,6 +659,447 @@
           color: green;
         }
 
+
+
+        .topspacer{
+          height: 34.9999vh;}
+
+        /*event--------------------------*/
+        .hero {
+          height: 65vh;
+          width: 100vw;
+          position: absolute;
+          background-color: grey;
+        }
+        .event {
+          height: 100vh;
+          width: 100%;
+          position: relative;
+          background-image: url(img/newbackground.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+
+
+        }
+        .hello {
+          font-size: 10em;
+          position: absolute;
+        }
+        .fullpage {
+          height: 65vh;
+          width: 100%;
+        }
+        #bexley {
+          margin-top: 65vh;
+        }
+        #bexley2{
+
+        }
+        #upcoming {
+          background-color: black;
+        }
+.contentfiller {
+  height: 65vh;
+  width: 100%;
+  background-color: black;
+}
+.animfiller {
+  height: 53vh;
+}
+.anims {
+  margin-bottom: 3em;
+  position: relative;
+}
+.herobox{
+  display: inline-block;
+  width: 60vw;
+  background-color: black;
+  height: inherit;
+  outline: 2px solid #FF0000;
+  outline-offset: -2em;
+  color: #FFF;
+}
+.scrolldowngif {
+  display: block;
+  width: 40vw;
+  background-color: blue;
+  height: 30vh;
+  color: #FFF;
+}
+.scrolldownpic {
+  display: block;
+  width: 40vw;
+  background-color: yellow;
+  height: 30vh;
+  color: #FFF;
+}
+.scrolldowncontainer{
+  display: inline-block;
+  width: 40vw;
+  background-color: black;
+  height: inherit;
+  color: #FFF;
+}
+.herotextbox {
+  display: inline-block;
+  width: 60vw;
+  background-color: black;
+  height: inherit;
+  outline: 2px solid #FF0000;
+  outline-offset: -2em;
+  color: #FFF;
+}
+.herogallery {
+  display: inline-block;
+  width: 40vw;
+  background-color: black;
+  height: inherit;
+}
+.mySlides{
+  background-image: url(img/overviewmiddlesecond.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: inherit;
+height: inherit;}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.desctextbox {
+  margin-top: 4em;
+  width: 85%;
+  margin-left: 2.5em;
+  font-size:1.1em;
+  text-decoration: none;
+
+}
+
+#wrapper {
+  display: table;
+  width:100%;
+  height:100%;
+}
+
+#wrapper-inner {
+  display: table-cell;
+  vertical-align:middle;
+  width:100%;
+  height:100%;
+}
+
+#scroll-down {
+    display: block;
+    position: relative;
+    padding-top: 79px;
+  text-align:center;
+}
+.arrow-down {
+    display: block;
+    margin: 0 auto;
+    width: 10px;
+    height: 38px;
+}
+.arrow-down:after {
+    content: '';
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid red;
+    border-right: 2px solid red;
+    behavior: url(-ms-transform.htc);
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+.first{padding-left: 2em;
+text-decoration: none;}
+.second {
+  padding-left: 2em;
+}
+.third {
+  margin-right: 3.4em;
+  background-color: black;
+}
+#scroll-title {
+    display: block;
+    text-transform: uppercase;
+    color: red;
+  font-family: Helvetica Neue, Helvetica, Arial;
+  font-size:23px;
+  font-weight:bold;
+  letter-spacing:.1em;
+}
+#scroll-down::before {
+    -webkit-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+    /* Safari 4+ */
+
+    -moz-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+    /* Fx 5+ */
+
+    -o-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+    /* Opera 12+ */
+
+    animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+    /* IE 10+, Fx 29+ */
+
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 90px;
+    background: red;
+    content: ' ';
+}
+@-webkit-keyframes elasticus {
+    0% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+    50% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    50.1% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    100% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+}
+@-moz-keyframes elasticus {
+    0% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+    50% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    50.1% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    100% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+}
+@-o-keyframes elasticus {
+    0% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+    50% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    50.1% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    100% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+}
+@keyframes elasticus {
+    0% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+    50% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    50.1% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    100% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+}
+
+
+
+// codepen profile logo
+#paschka {
+  display: block;
+  color:white;
+  font-family:helvetica neue, helvetica, arial;
+  font-size:32px;
+  text-decoration: none;
+  position: fixed;
+  bottom:0px;
+  right:0px;
+  padding:0px;
+  transition: all .1s ease;
+  background:#000;
+  height:40px;
+  line-height:30px;
+  vertical-align:middle;
+  width:40px;
+  text-align:center;
+  border-radius: 5%;
+  bottom:20px;
+  right:20px;
+
+  &:hover {
+    background:#232323;
+    transition:all .1s ease;
+    color:#f0f0f0;
+  }
+  #mrsa {
+    text-decoration: underline;
+    color: green;
+  }
+  .mrsa {
+    text-decoration: none;
+  }
+
+}
+
+
+
+
     </style>
 
 
@@ -655,25 +1113,25 @@
 
         <nav>
             <ul>
-                <li><a href="index.html" class="nav-buttons">Home</a></li>
-                <li class="nav-buttons">Team
-                   <a href="teammembers.html" class="dropdown-nav-buttons dropdownone">Team Members</a>
-                    <a href="#" class="dropdown-nav-buttons dropdowntwo">Collaborations</a>
+                <li><a href="index.html" class="nav-buttonmasks">Home</a></li>
+                <li class="nav-buttonmasks">Team
+                   <a href="teammembers.html" class="dropdown-nav-buttonmasks dropdownone">Team Members</a>
+                    <a href="#" class="dropdown-nav-buttonmasks dropdowntwo">Collaborations</a>
                 </li>
-                <li class="nav-buttons">Project
-                  <a href="#" class="dropdown-nav-buttons dropdownone">Description</a>
-                  <a href="#" class="dropdown-nav-buttons dropdowntwo">Design</a>
-                  <a href="#" class="dropdown-nav-buttons dropdownthree">Results</a>
+                <li class="nav-buttonmasks">Project
+                  <a href="#" class="dropdown-nav-buttonmasks dropdownone">Description</a>
+                  <a href="#" class="dropdown-nav-buttonmasks dropdowntwo">Design</a>
+                  <a href="#" class="dropdown-nav-buttonmasks dropdownthree">Results</a>
                 </li>
-                <li class="nav-buttons">Parts
-                  <a href="#" class="dropdown-nav-buttons dropdownone">Parts Overview</a>
-                  <a href="#" class="dropdown-nav-buttons dropdowntwo">Basic Parts</a>
-                  <a href="#" class="dropdown-nav-buttons dropdownthree">Composite Parts</a>
+                <li class="nav-buttonmasks">Parts
+                  <a href="#" class="dropdown-nav-buttonmasks dropdownone">Parts Overview</a>
+                  <a href="#" class="dropdown-nav-buttonmasks dropdowntwo">Basic Parts</a>
+                  <a href="#" class="dropdown-nav-buttonmasks dropdownthree">Composite Parts</a>
                 </li>
-                <a href="#" class="nav-buttons">Safety</a>
-                <li class="nav-buttons">Human Practices
-                  <a href="#" class="dropdown-nav-buttons dropdownone" id="navadjust">Overview</a>
-                  <a href="#" class="dropdown-nav-buttons dropdowntwo" id="navadjust">Education and Engagement</a>
+                <a href="#" class="nav-buttonmasks">Safety</a>
+                <li class="nav-buttonmasks">Human Practices
+                  <a href="#" class="dropdown-nav-buttonmasks dropdownone" id="navadjust">Overview</a>
+                  <a href="#" class="dropdown-nav-buttonmasks dropdowntwo" id="navadjust">Education and Engagement</a>
                 </li>
             </ul>
         </nav>
@@ -695,7 +1153,7 @@
           <div class='slide3' id="middlethird"></div>
         </div>
         <figcaption class="middledesc">
-            <a href="education.html" class="button button-accent button-small">Education</a>
+            <a href="education.html" class="buttonmask buttonmask-accent buttonmask-small">Education</a>
         </figcaption>
       </div>
 
@@ -706,7 +1164,7 @@
           <div class='slide3' id="rightthird"></div>
         </div>
         <figcaption class="middledesc">
-            <a href="" class="button button-accent button-small">Engagement</a>
+            <a href="" class="buttonmask buttonmask-accent buttonmask-small">Engagement</a>
         </figcaption>
       </div>
     </section>
@@ -726,18 +1184,16 @@
       </div>
     </section>
 
-  <section class="backgroundfancy">
-<img class="backgroundfancy" src="img/humpracticesoverview.png"></img>
+  <section >
+    <div class="backgroundfancy">
+<img id="backgroundfancy"src="img/educationandengagementoverview.png"></img>
+</div>
     </section>
 
-<!---
-    <section class="bottom">
-      <div class="overviewtextbox">
-        <div id="overviewblock"><h1>Overview</h1></div>
-        <p id="overviewdesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
-    </section>
-    --->
+
+
+
+------------------------------------------------------------------------------------------------
 
     </body>
 </html>

@@ -11,218 +11,227 @@
 
 
         * {
-            box-sizing: border-box;
-            font-family: 'Raleway', sans-serif;
+            box-sizing: border-box!important;
+            font-family: 'Raleway', sans-serif!important;
         }
 
         body{
-        margin: 0;
-    padding: 0;
-        font-family: 'Raleway', sans-serif;
-        text-align: center;
+        margin: 0!important;
+    padding: 0!important;
+        font-family: 'Raleway', sans-serif!important;
+        text-align: center!important;
         }
+        a {        font-family: 'Raleway', sans-serif!important;}
+}
 
         img {
-            max-width: 100%;
-            height: auto;
+            max-width: 100%!important;
+            height: auto!important;
         }
 
         .container {
-            width: 95%;
-            margin: 0 auto;
+            width: 95%!important;
+            margin: 0 auto!important;
         }
         .fixcontainer {
-          width:100%;
-          margin: 0 auto;
+          width:100%!important;
+          margin: 0 auto!important;
         }
 
         /*typography------------------------------*/
         .title {
-            font-weight: 900;
-            font-weight: bold;
-            font-size: 3.2rem;
-            margin-bottom: 1em;
-            padding-bottom: 2em;
-            text-emphasis: bold;
+            font-weight: 900!important;
+            font-weight: bold!important;
+            font-size: 3.2rem!important;
+            margin-bottom: 1em!important;
+            padding-bottom: 2em!important;
+            text-emphasis: bold!important;
         }
         .smallertitle {
-          font-weight: 900;
-          font-weight: bold;
-          font-size: 1.4rem;
-          margin-bottom: 1em;
-          padding-top: 3.1em;
-          padding-bottom: 0em;
-          text-emphasis: bold;
+          font-weight: 900!important;
+          font-weight: bold!important;
+          font-size: 1.4rem!important;
+          margin-bottom: 1em!important;
+          padding-top: 3.1em!important;
+          padding-bottom: 0em!important;
+          text-emphasis: bold!important;
 
         }
         h1 {
-            font-weight: 300;
-            font-size: 2.5em;
-            text-transform: capitalize;
-            margin-top: 1em;
+            font-weight: 300!important;
+            font-size: 2.5em!important;
+            text-transform: capitalize!important;
+            margin-top: 1em!important;
         }
         .title span {
-            margin-top: 1em;
-            font-weight: 200;
-            display: block;
-            font-size: .9em;
+            margin-top: 1em!important;
+            font-weight: 200!important;
+            display: block!important;
+            font-size: .9em!important;
         }
 
 
-        /*Buttons -------------------------------*/
-        .button {
-            display: inline-block;
-            font-size: 1.25rem;
-            text-decoration: none;
-            text-transform: uppercase;
-            border-width: 2px;
-            border-style: solid;
-            padding: .5em 1.75em;
+        /*buttonmasks -------------------------------*/
+        .buttonmask {
+            display: inline-block!important;
+            font-size: 1.25rem!important;
+            text-decoration: none!important;
+            text-transform: uppercase!important;
+            border-width: 2px!important;
+            border-style: solid!important;
+            padding: .5em 1.75em!important;
+        }
+        .buttonmask {
+          all:revert!important;
         }
 
-        .button-small {
-            font-size: .9rem;
-            font-weight: 700;
+
+        .buttonmask-small {
+            font-size: .9rem!important;
+            font-weight: 700!important;
         }
 
-        .button-accent {
-            color: #FF0000;
-            border-color: #FF0000;
+        .buttonmask-accent {
+            color: #FF0000!important;
+            border-color: #FF0000!important;
         }
 
-        .button-accent:hover {
-        background: #FF0000;
-        color: black;
+        .buttonmask-accent:hover {
+        background: #FF0000!important;
+        color: black!important;
         }
 
 
         /*header------------------------------*/
 
         header {
-            background-color: rgba(0,0,0,.75);
-            position: absolute;
-            left: 0;
-            right: 0;
-            max-height: 7em;
+            background-color: rgba(0,0,0,.75)!important;
+            position: absolute!important;
+            left: 0!important;
+            right: 0!important;
+            max-height: 7em!important;
         }
 
         nav ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            float: right;
-            margin-right: 5em;
-            margin-top: 2em;
-            position: relative;
+            margin: 0!important;
+            padding: 0!important;
+            list-style: none!important;
+            float: right!important;
+            margin-right: 5em!important;
+            margin-top: 2em!important;
+            position: relative!important;
         }
 
         nav li {
-            display: inline-block;
-            margin: 1em;
-            position: relative;
+            display: inline-block!important;
+            margin: 1em!important;
+            position: relative!important;
         }
 
-        .nav-buttons {
-            font-weight: 900;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 0.95rem;
-            padding: .5em;
-            color: #FFF;
-            position: relative;
-            padding-bottom: 3em;
+        .nav-buttonmasks {
+            font-weight: 900!important;
+            text-decoration: none!important;
+            text-transform: uppercase!important;
+            font-size: 0.95rem!important;
+            padding: .5em!important;
+            color: #FFF!important;
+            position: relative!important;
+            padding-bottom: 3em!important;
         }
 
-        .nav-buttons:hover {color: #FF0000;}
-        .dropdown-nav-buttons:hover {color: #FF0000;}
+        .nav-buttonmasks:hover {color: #FF0000!important;}
+        .dropdown-nav-buttonmasks:hover {color: #FF0000!important;}
 
-        .dropdown-nav-buttons {
-            font-weight: 900;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 0.95rem;
-            padding: .5em;
-            color: #FFF;
-            display: none;
-            background-color:  rgba(0,0,0,.75);
-            z-index: 1;
-            width: 10em;
-            margin-left: -3em;
+        .dropdown-nav-buttonmasks {
+            font-weight: 900!important;
+            text-decoration: none!important;
+            text-transform: uppercase!important;
+            font-size: 0.95rem!important;
+            padding: .5em!important;
+            color: #FFF!important;
+            display: none!important;
+            background-color:  rgba(0,0,0,.75)!important;
+            z-index: 1!important;
+            width: 10em!important;
+            margin-left: -3em!important;
         }
         #navadjust {
-          margin-left:-0.3em;
+          margin-left:-0.3em!important;
         }
 
         .dropdownone {
-          margin-top: 2.58em;
+          margin-top: 2.58em!important;
         }
         .dropdowntwo {
-            margin-top: 4.75em;
+            margin-top: 4.75em!important;
         }
         .dropdownthree {
-          margin-top: 6.93em;
+          margin-top: 6.93em!important;
+        }
+        .dropdownfour {
+          margin-top: 9.1em!important;
         }
 
-        .nav-buttons:hover .dropdown-nav-buttons{
-            display: block;
-            position: absolute;
+        .nav-buttonmasks:hover .dropdown-nav-buttonmasks{
+            display: block!important;
+            position: absolute!important;
         }
         .logo {
-            height: 90px;
-            width: 90px;
-            float: left;
-            margin-left: 6em;
-            margin-top: .5em;
+            height: 90px!important;
+            width: 90px!important;
+            float: left!important;
+            margin-left: 6em!important;
+            margin-top: .5em!important;
         }
 
            /*home hero------------------------------*/
 
         .home-hero {
-            background-image: url(img/srnabackgroundhome.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 10em 0;
-            color: #FFF;
-            height: 100vh;
-            background-attachment: fixed;
-            background-position: center;
+            background-image: url(img/srnabackgroundhome.png)!important;
+            background-repeat: no-repeat!important;
+            background-size: cover!important;
+            padding: 10em 0!important;
+            color: #FFF!important;
+            height: 100vh!important;
+            background-attachment: fixed!important;
+            background-position: center!important;
         }
 
         #seeourwork {
-          margin-top: 0em;
-          margin-bottom: 2em;
+          margin-top: 0em!important;
+          margin-bottom: 2em!important;
         }
 
    /*home-about------------------------------*/
         .home-about-textbox {
-            background-color: black;
-            padding: 15em;
+            background-color: black!important;
+            padding: 15em!important;
 
-            margin-left: -2.5vw;
-            outline: 2px solid #FF0000;
-            outline-offset: -5em;
-            color: #FFF;
+            margin-left: -2.5vw!important;
+            outline: 2px solid #FF0000!important;
+            outline-offset: -5em!important;
+            color: #FFF!important;
         }
 
         .home-about-textbox h1 {
-            color: #FF0000;
-            position: relative;
-            margin-top: -4.5em;
-            margin-bottom: 3em;
-            background: black;
-            margin-left: auto;
-            margin-right: auto;
-            width: 35vw;
-            text-align: center;
+            color: #FF0000!important;
+            position: relative!important;
+            margin-top: -4.5em!important;
+            margin-bottom: 3em!important;
+            background: black!important;
+            margin-left: auto!important;
+            margin-right: auto!important;
+            width: 35vw!important;
+            text-align: center!important;
         }
         .home-about-textbox a {
-            margin-top: 2em;
-            margin-bottom: 0;
-            width: 60%;
+            margin-top: 2em!important;
+            margin-bottom: 0!important;
+            width: 60%!important;
         }
 
         #projectdescshort {
-          color: #FFF;
+          color: #FFF!important;
         }
 
 
@@ -230,58 +239,58 @@
        /*portfolio------------------------------*/
 
         .portfolio h1 {
-            width: 12em;
-            margin: auto;
-            margin-top: -1.5em;
-            padding-bottom: .7em;
-            padding-top: 1em;
-            color: #FF0000;
+            width: 12em!important;
+            margin: auto!important;
+            margin-top: -1.5em!important;
+            padding-bottom: .7em!important;
+            padding-top: 1em!important;
+            color: #FF0000!important;
         }
         .line {
-                width: 30%;
-                height: 1px;
-                margin: auto;
-            background: #FF0000;
+                width: 30%!important;
+                height: 1px!important;
+                margin: auto!important;
+            background: #FF0000!important;
         }
         .spacer {
-            width: 100%;
-            height: 2em;
+            width: 100%!important;
+            height: 2em!important;
         }
         .portfolio {
-            margin: 3em 0;
-            background-color: black;
+            margin: 3em 0!important;
+            background-color: black!important;
 
         }
 
         .port-item {
-            position: relative;
-            margin: 0;
-            width: 50%;
-            float: left;
+            position: relative!important;
+            margin: 0!important;
+            width: 50%!important;
+            float: left!important;
         }
         .port-item img {
-            display: block;
-            width: 100%;
-            height: 17em;
-            object-fit: cover;
+            display: block!important;
+            width: 100%!important;
+            height: 17em!important;
+            object-fit: cover!important;
 
         }
         .port-desc {
-            position: absolute;
-            z-index: 100;
-            bottom: 3em;
-            left: 3em;
-            right: 3em;
-            color: white;
-            background: rgba(0,0,0,.75);
-            padding-bottom: 1em;        }
+            position: absolute!important;
+            z-index: 100!important;
+            bottom: 3em!important;
+            left: 3em!important;
+            right: 3em!important;
+            color: white!important;
+            background: rgba(0,0,0,.75)!important;
+            padding-bottom: 1em!important;        }
            .port-desc p {
-            margin: 1em;
-            font-size: 1.2em;
+            margin: 1em!important;
+            font-size: 1.2em!important;
 
         }
         #projectdescshort {
-          font-size: 1.5em;
+          font-size: 1.5em!important;
         }
 
 
@@ -300,27 +309,29 @@
 
         <nav>
             <ul>
-                <li><a href="index.html" class="nav-buttons">Home</a></li>
-                <li class="nav-buttons">Team
-                   <a href="teammembers.html" class="dropdown-nav-buttons dropdownone">Team Members</a>
-                    <a href="#" class="dropdown-nav-buttons dropdowntwo">Collaborations</a>
+                <li><a href="index.html" class="nav-buttonmasks standalonenav">Home</a></li>
+                <li class="nav-buttonmasks">Team
+                   <a href="teammembers.html" class="dropdown-nav-buttonmasks dropdownone">Team Members</a>
+                    <a href="collaboration.html" class="dropdown-nav-buttonmasks dropdowntwo">Collaborations</a>
                 </li>
-                <li class="nav-buttons">Project
-                  <a href="#" class="dropdown-nav-buttons dropdownone">Description</a>
-                  <a href="#" class="dropdown-nav-buttons dropdowntwo">Design</a>
-                  <a href="#" class="dropdown-nav-buttons dropdownthree">Results</a>
+                <li class="nav-buttonmasks">Project
+                  <a href="#" class="dropdown-nav-buttonmasks dropdownone">Description</a>
+                  <a href="#" class="dropdown-nav-buttonmasks dropdowntwo">Design</a>
+                  <a href="#" class="dropdown-nav-buttonmasks dropdownthree">Results</a>
+                  <a href="attributions.html" class="dropdown-nav-buttonmasks dropdownfour">Attributions</a>
+
                 </li>
-                <li class="nav-buttons">Parts
-                  <a href="#" class="dropdown-nav-buttons dropdownone">Parts Overview</a>
-                  <a href="#" class="dropdown-nav-buttons dropdowntwo">Basic Parts</a>
-                  <a href="#" class="dropdown-nav-buttons dropdownthree">Composite Parts</a>
+                <li class="nav-buttonmasks">Parts
+                  <a href="#" class="dropdown-nav-buttonmasks dropdownone">Parts Overview</a>
+                  <a href="#" class="dropdown-nav-buttonmasks dropdowntwo">Basic Parts</a>
+                  <a href="#" class="dropdown-nav-buttonmasks dropdownthree">Composite Parts</a>
                 </li>
-                <a href="#" class="nav-buttons">Safety</a>
-                <li class="nav-buttons">Human Practices
-                  <a href="integratedhumanpractices.html" class="dropdown-nav-buttons dropdownone" id="navadjust">Integrated HP</a>
-                  <a href="educationandengagement.html" class="dropdown-nav-buttons dropdowntwo" id="navadjust">Education and Engagement</a>
+                <a href="#" class="nav-buttonmasks standalonenav">Safety</a>
+                <li class="nav-buttonmasks">Human Practices
+                  <a href="integratedhumanpractices.html" class="dropdown-nav-buttonmasks dropdownone" id="navadjust">Integrated HP</a>
+                  <a href="educationandengagement.html" class="dropdown-nav-buttonmasks dropdowntwo" id="navadjust">Education and Engagement</a>
                 </li>
-                <a href="acknowledgements.html" class="nav-buttons">Acknowledgements</a>
+                <a href="acknowledgements.html" class="nav-buttonmasks standalonenav">Acknowledgements</a>
             </ul>
         </nav>
     </header>
@@ -336,7 +347,7 @@
         <h1 class="title titleadjust">3' Suspects
             <span><h1 class="smallertitle">Investigating Untranslated regions on 3' end</h1></span>
         </h1>
-        <a href="#" class="button button-accent" id="seeourwork">See Our Work</a>
+        <a href="#" class="buttonmask buttonmask-accent" id="seeourwork">See Our Work</a>
         </div>
         --->
     </section>
@@ -346,7 +357,7 @@
         <div class="home-about-textbox">
             <h1>what are we doing?</h1>
             <p id="projectdescshort">We are developing a new technology platform based on 3'UTR sequence characterisation to control soluble protein expression in E.coli. <br> <br>We will use E.coli K12 to test our "Proof of Concept" Principle by engineering 3'UTR sequences (Sharma et al, 2011) to interact with either cytosolic proteins or 5'UTR sequences of our gene of interest: trxA and gor. Down regulation of these genes will be quantified by assessing quantitatively GFP signal. Efficiency of down regulation of genes will be quantified by assessing reaction kinetics of Alkaline Phosphatase (AP).</p>
-            <a href="#" class= "button button-accent">Full Project Description</a>
+            <a href="#" class= "buttonmask buttonmask-accent">Full Project Description</a>
         </div>
     </section>
         </div>
@@ -360,7 +371,7 @@
             <img src="img/symposium.PNG" alt="portfolio item">
             <figcaption class="port-desc">
                 <p>iGEM Symposium</p>
-                <a href="" class="button button-accent button-small">See More</a>
+                <a href="" class="buttonmask buttonmask-accent buttonmask-small">See More</a>
             </figcaption>
         </figure>
 
@@ -369,7 +380,7 @@
             <img src="img/school.PNG" alt="portfolio item">
             <figcaption class="port-desc">
                 <p>Bexley School Visit</p>
-                <a href="" class="button button-accent button-small">See More</a>
+                <a href="" class="buttonmask buttonmask-accent buttonmask-small">See More</a>
             </figcaption>
         </figure>
 
@@ -378,7 +389,7 @@
             <img src="img/instagram.PNG" alt="portfolio item">
             <figcaption class="port-desc">
                 <p>Social Media</p>
-                <a href="" class="button button-accent button-small">See More</a>
+                <a href="" class="buttonmask buttonmask-accent buttonmask-small">See More</a>
             </figcaption>
         </figure>
 
@@ -387,7 +398,7 @@
             <img src="img/lab.PNG" alt="portfolio item">
             <figcaption class="port-desc">
                 <p>Lab Work</p>
-                <a href="" class="button button-accent button-small">See More</a>
+                <a href="" class="buttonmask buttonmask-accent buttonmask-small">See More</a>
             </figcaption>
         </figure>
     </section>
